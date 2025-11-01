@@ -1,0 +1,58 @@
+/* ---------- Main container ---------- */
+#plant_container {
+    display: flex;
+    flex-direction: column;
+    background-color: #C1FED3;
+    width: 35vh;
+    height: 25vh;
+    border-radius: 2vh;
+    box-shadow: 0 0 0 1.25vh red;
+    margin: 1.25vh;
+    padding: 1.5vh;
+}
+
+#plant_container h2, #plant_container h3, #plant_container p {
+    margin: 0;
+    color: black;
+}
+
+#plant_container h2 {
+    font-size: 2vh;
+    margin-bottom: 0.5vh;
+    margin-top: 0.5vh;
+}
+
+#plant_container h3 {
+    font-size: 1.75vh;
+}
+
+#plant_container p {
+    font-size: 1.65vh;
+}
+
+/* ---------- First layer container ---------- */
+#plant_detail_first_layer_container {
+    display: flex;
+    height: 13vh;
+}
+
+#plant_detail_first_layer_container img {
+    width: 13vh;
+    height: 13vh;
+    border-radius: 2vh;
+}
+
+#plant_details_main_info_container {
+    display: flex;
+    flex-direction: column;
+    height: 13vh;
+    margin-left: 1vh;
+}
+
+/* ---------- Second layer container ---------- */
+#plant_detail_second_layer_container {
+    display: flex;
+    flex-direction: column;
+    height: 8vh;
+    margin-top: 1vh;
+}
