@@ -1,0 +1,52 @@
+
+#json structure planning
+
+first off we need an official list of what plants are considered
+endangered currently and for so will appear in our queries
+
+the IUCN is the so called gold standard, an AUTHORITY in biology
+and so we will build on that
+
+#oh but sam i dont like biology
+yk i got a 10 back first of ESO, imagine
+
+to grab the data from the IUCN we need to study a slight bit
+categories in which species can be classified:
+
+(EX) Extinct
+meaning: no reasonable doubt the last individual has infact died
+which means no conservation action can save them
+
+(EW) Extinct in the Wild
+meaning: only survives in captivity human-controlled environments
+
+(CR) Critically Endangered
+meaning: extremely high risk of extinction in the wild very soon
+normally 80-90% over the last 10 years or 3 generations, or just simply
+extremely small population
+
+(EN) Endangered
+meaning: high risk of extinction in the near future
+50-70% reduction over the last 10 years or 3 generations
+
+(VU) Vulnerable
+meaning: high risk of extinction in the medium term, population
+reduction 30-50% over the last 10 years or 3 generations,
+meaning it needs monitoring and conservation of some sorts
+
+(NT) Near Threatened
+meaning: close to qualifiying as threatened but not quite yet, if trends 
+continue it could become vulnerable
+
+(LC) Least concern
+meaning: chill
+
+(DD) Data deficient
+
+(NE) Not evaluated
+
+alright thats enough biology
+the IUCN will prvovide us a list the which will for now basically 
+decide the species that we wlll use for this
+
+lets then research, what api functions or how we would even obtain
