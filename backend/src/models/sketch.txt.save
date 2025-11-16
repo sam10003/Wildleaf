@@ -1,0 +1,129 @@
+
+#json structure planning
+
+first off we need an official list of what plants are considered
+endangered currently and for so will appear in our queries
+
+the IUCN is the so called gold standard, an AUTHORITY in biology
+and so we will build on that
+
+#oh but sam i dont like biology
+yk i got a 10 back first of ESO, imagine
+
+to grab the data from the IUCN we need to study a slight bit
+categories in which species can be classified:
+
+(EX) Extinct
+meaning: no reasonable doubt the last individual has infact died
+which means no conservation action can save them
+
+(EW) Extinct in the Wild
+meaning: only survives in captivity human-controlled environments
+
+(CR) Critically Endangered
+meaning: extremely high risk of extinction in the wild very soon
+normally 80-90% over the last 10 years or 3 generations, or just simply
+extremely small population
+
+(EN) Endangered
+meaning: high risk of extinction in the near future
+50-70% reduction over the last 10 years or 3 generations
+
+(VU) Vulnerable
+meaning: high risk of extinction in the medium term, population
+reduction 30-50% over the last 10 years or 3 generations,
+meaning it needs monitoring and conservation of some sorts
+
+(NT) Near Threatened
+meaning: close to qualifiying as threatened but not quite yet, if trends 
+continue it could become vulnerable
+
+(LC) Least concern
+meaning: chill
+
+(DD) Data deficient
+
+(NE) Not evaluated
+
+alright thats enough biology
+the IUCN will prvovide us a list the which will for now basically 
+decide the species that we wlll use for this
+
+lets then research, what api functions or how we would even obtain
+first off lets be carefull just incase: we need to thank them on the
+README so dont forget about that
+
+the fetch we would require to do in such case (after like 1h of
+tampering through this fuckass API its so outdated)
+would be https://api.iucnredlist.org/api/v4/countries/ES, this is sort
+of like a log
+
+lets look at the structure
+divided in 2 docs country (metadata about spain) and assesments
+within assesments we have:
+  - year
+  - latest (wether this is the most recent one)
+  - taxon_scientific_name
+  - red_list_category_code
+  - url
+  - scopes
+
+im gonna open a .py file, we have to be smart
+ill boot up atlas and start fetching data just to see a bit how the api
+reacts to me hammering it a bit
+
+id rather not overdo this however, ill also see what anomalies appear
+within the payloads i gather
+
+the collection will be simply named "UICN" it will simply contain
+{
+  "_id":int
+  "name":string --canonical name of the species
+  "state":string --UICN chosen status for said species
+}
+  
+now you might be like, sam what do you mean canonical name, well
+you shouldve studied my dear basically on databases canonical names are
+the strings we use to identify species not scientific names mainly because
+of the overall redundancy and syntax complications they have
+
+we managed to insert a bunch of data with in the db, now im having issues
+filtering only the plantae kingdom
+
+im ngl i might just break ToS and like digest the entirety of the IUCN
+because lets be real
+ - they wont really mind it that much
+ - i can just store it in my machine since the data im storing is low key
+super minimal
+ - they wont really mind it that much x2
+plus i refuse to write like an actual data filtering pipeline
+that doesnt hammer the gbif yk
+
+yup writing this as i just wait for the entire db to be digested
+okay im thinking about the logic now
+
+the celery will run a task to check all the new paging wthin the IUCN db
+wont filter by state since a plant we have in the IUCN db might be be 
+reclassified to LC, we need to make sure all our plants are in the latest
+so it will filter those which arent on the latest still
+
+im probably gonna change the name of this collection to:
+  Canonical Names
+
+simply.
+
+we at page 123 yoooo
+this shit is actually fucking eternal tf
+okay
+its finally done, it has in total
+760 documents
+[
+  { _id: 'DD', count: 139 },
+  { _id: 'VU', count: 158 },
+  { _id: 'CR', count: 92 },
+  { _id: 'EN', count: 179 },
+  { _id: 'NT', count: 192 }
+]
+
+i mean thats fair enough i guess
+

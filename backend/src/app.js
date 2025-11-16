@@ -1,18 +1,16 @@
 // app.js
-import express from 'helmet';
 import express from 'express';
+import helmet from 'helmet';
 import cors from 'cors';
 import morgan from 'morgan';
 import cookieParser from 'cookie-parser';
 import dotenv from 'dotenv';
 
-// hypothetical routes
-/*
-import testRouter from './routes/test.js';
-import speciesRouter from './routes/gbif/species.js';
-import occurrencesRouter from './routes/gbif/occurrences.js';
-import datasetRouter from './routes/gbif/dataset.js';
-*/
+//models
+import Canon from './models/Canon_list.js';
+
+//routes
+import IUCN from './routes/test.js'
 
 dotenv.config();
 
@@ -39,11 +37,6 @@ app.use(cors({
   optionsSuccessStatus: 200
 }));
 
-// Routes
-/*
-app.use('/test', testRouter);
-app.use('/api/gbif', speciesRouter);
-app.use('/api/gbif', occurrencesRouter);
-app.use('/api/gbif', datasetRouter);
-*/
+app.use('/IUCN',IUCN);
+
 export default app;
