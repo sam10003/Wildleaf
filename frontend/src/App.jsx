@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import './App.css'
 import Map from './map_component/map'
+import Leaderboard from './leaderboard_component/leaderboard'
 
 
 function App() {
@@ -45,7 +46,7 @@ console.log(canons);
 
   return (
     <>
-      <Map/>
+      <Leaderboard/>
     </>
   )
 }

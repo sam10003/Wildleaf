@@ -11,6 +11,13 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /* Colors */
+  --light-green: #B3FFB3;
+  --green: #22B14C;
+  --dark-green: #013220;
+  --beige: #EFE9AE;
+  --orange: #DC602E;
 }
 
 body {
