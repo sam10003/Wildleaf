@@ -46,7 +46,8 @@ console.log(canons);
 
   return (
     <>
-      <Leaderboard/>
+      <Map/>
+      //<Leaderboard/>
     </>
   )
 }
