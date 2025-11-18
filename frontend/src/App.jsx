@@ -7,7 +7,9 @@ function App() {
 
   return (
     <>
-      <Leaderboard/>
+      //to test the leaderboard page
+      //<Leaderboard/>
+      <Map/>
     </>
   )
 }
