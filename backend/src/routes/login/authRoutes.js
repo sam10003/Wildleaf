@@ -7,7 +7,6 @@ import {
   setRefreshCookie
 } from "../../services/authService.js";
 import User from "../../models/User.js";
-//import { googleAuth, refresh, logout } from "../../controllers/authController.js";
 
 // Google OAuth Login
 const googleAuth = async (req, res) => {
@@ -82,9 +81,7 @@ const refresh = async (req, res) => {
     const user = await User.findById(decoded.id);
 
     const newAccessToken = generateAccessToken(user);
-    const newRefreshToken = generateRefreshToken(user);
 
-    setRefreshCookie(res, newRefreshToken);
     res.json({ accessToken: newAccessToken });
   } catch {
     res.status(403).json({ error: "Invalid refresh token" });
@@ -102,6 +99,8 @@ const logout = (req, res) => {
   res.json({ message: "Logged out" });
 };
 
+
+// Routes
 const router = express.Router();
 
 router.post("/google", googleAuth);
