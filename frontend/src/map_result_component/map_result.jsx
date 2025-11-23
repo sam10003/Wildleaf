@@ -6,6 +6,9 @@ function Map_Result(props) {
     return (
         <>
             <div id='map_results_container'>
+                <div id='title_container'>
+                    <h2>Plants in {props.region}</h2>
+                </div>
                 <div id='search_container'>
                     <input id='search_field' type="text" placeholder='search plants...'/>
                 </div>

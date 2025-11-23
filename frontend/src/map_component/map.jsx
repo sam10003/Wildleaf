@@ -8,7 +8,6 @@ import FitBounds from './fit_bounds.jsx';
 
 function Map(props) {
     const [regions, setRegions] = useState(null);
-    const [displayResults, setDisplayResults] = useState(false);
     const [error, setError] = useState(false);
     const [loading, setLoading] = useState(true);
 
@@ -43,7 +42,7 @@ function Map(props) {
         layer.on({
             click: () => {
                 console.log(`You clicked on: ${region.properties.name}`);
-                setDisplayResults(true);
+                props.selectRegion(region.properties.name);
             }
         });
     };
@@ -63,7 +62,6 @@ function Map(props) {
                 <FitBounds geoJson={regions}/>
               </>
             )}
-            {displayResults && <Map_Result />}
         </MapContainer>
     );
 }

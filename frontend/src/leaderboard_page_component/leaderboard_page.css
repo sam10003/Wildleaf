@@ -1,0 +1,28 @@
+#leaderboard_page_container button {
+    position: fixed;
+    top: 5px;
+}
+
+#leaderboard_page_container button:first-of-type {
+    left: 5px;
+}
+
+#leaderboard_page_container button:last-of-type {
+    right: 5px;
+}
+
+#leaves_left, #leaves_right {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 250px;
+    background-image: url("../assets/falling-leaves.png");
+}
+
+#leaves_left {
+    left: 150px;
+}
+
+#leaves_right {
+    right: 200px;
+}

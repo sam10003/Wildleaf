@@ -1,10 +1,18 @@
 import { useState, useEffect } from 'react'
 import './App.css'
-import Map from './map_component/map'
-import Leaderboard from './leaderboard_component/leaderboard'
+import Map_Page from './map_page_component/map_page';
+import Leaderboard_Page from './leaderboard_page_component/leaderboard_page';
 
 
 function App() {
+
+  // Change pages
+  const [ currentPage, setCurrentPage ] = useState("map");
+
+  const changeCurrentPage = (newPage) => {
+    setCurrentPage(newPage);
+  }
+
   const [canons,setCanons] = useState([]);
   
   useEffect(() => {
@@ -46,8 +54,8 @@ console.log(canons);
 
   return (
     <>
-      <Map/>
-      //<Leaderboard/>
+      {currentPage == "map" && <Map_Page changeCurrentPage={changeCurrentPage}/>}
+      {currentPage == "leaderboard" && <Leaderboard_Page changeCurrentPage={changeCurrentPage}/>}
     </>
   )
 }

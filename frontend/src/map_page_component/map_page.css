@@ -1,0 +1,15 @@
+#top_buttons_container, #bottom_buttons_container {
+    position: fixed;
+    z-index: 10000;
+    display: flex;
+    gap: 10px;
+}
+
+#top_buttons_container {
+    top: 5px;
+    right: 5px;
+}
+
+#bottom_buttons_container {
+    bottom: 5px;
+}
