@@ -9,6 +9,15 @@
     z-index: 10000;
 }
 
+/* ---------- Title container ---------- */
+#title_container {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    height: 6vh;
+    width: 100%;
+}
+
 /* ---------- Search container ---------- */
 #search_container {
     display: flex;

@@ -1,0 +1,82 @@
+#form_container {
+    display: flex;
+    flex-direction: column;
+    font-size: 110%;
+    gap: 2vh;
+}
+
+#form_container h2 {
+    text-align: center;
+}
+
+#form_container p {
+    margin: 0;
+    font-size: 70%;
+}
+
+#form_container input {
+    background-color: white;
+    color: black;
+    font-size: 100%;
+    border-radius: 5px;
+    border: none;
+}
+
+#img_container, #coordinated_container, #date_container {
+    display: flex;
+    align-self: center;
+    width: 70%;
+    justify-content: space-between;
+}
+
+#img_container div, #coordinated_container div {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ---------- Images ---------- */
+#img_container input {
+    display: none;
+}
+.image {
+    width: 20vh;
+    height: 20vh;
+    cursor: pointer;
+    background-color: white;
+    box-sizing: border-box;
+}
+.image img[alt="Default before"], .image img[alt="Default after"] {
+    margin: 25%;
+}
+
+/* ---------- Coordinates ---------- */
+#coordinated_container div {
+    width: 45%;
+}
+
+/* ---------- Date ---------- */
+#date_container {
+    flex-direction: column;
+}
+#date_container input {
+    width: 100%;
+}
+
+/* ---------- Buttons ---------- */
+#buttons_container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+}
+#buttons_container button:first-of-type {
+    background-color: red;
+}
+#buttons_container button {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

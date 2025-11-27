@@ -1,0 +1,25 @@
+#validation_container_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4vh;
+}
+
+#validation_container_content h2 {
+    font-size: 200%;
+    margin: 0;
+}
+
+#validation_container_content p {
+    font-size: 120%;
+    margin: 0;
+    margin-bottom: 2vh;
+}
+
+#validation_container_content button {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
