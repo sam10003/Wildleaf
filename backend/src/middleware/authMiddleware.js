@@ -1,6 +1,12 @@
 import jwt from "jsonwebtoken";
 import User from "../models/User.js";
 
+/*
+  arguments: the typycal express req and res, and the next callback
+  returns 401 if no token, 403 if its invalid, 404 if user not found.
+  will call next once its authenticated
+*/
+
 export default async function authMiddleware(req, res, next) {
   const authHeader = req.headers.authorization;
 

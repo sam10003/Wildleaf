@@ -6,11 +6,23 @@ const getProfile = (req, res) => {
   res.json({ user: req.user });
 };
 
+/*
+  arguments: the request and response for the client
+  will delete from the mongoDB the document with the corresponding
+  id and clear the following cookies (logging him out)
+
+  to keep in mind that the frontend must handle the removal
+  of the access token stored locally
+*/
+
 const deleteAccount = async (req, res) => {
   try {
     const userId = req.user._id;
-    await User.findByIdAndDelete(userId);
-    
+    console.log(userId);
+    const deletedUser = await User.findByIdAndDelete(userId);
+    console.log(deletedUser);
+    if(!deletedUser) return res.status(404).json({error: "User not found"});
+
     res.clearCookie("refreshToken", {
       httpOnly: true,
       secure: true,

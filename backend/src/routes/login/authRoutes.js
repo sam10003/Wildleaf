@@ -8,7 +8,14 @@ import {
 } from "../../services/authService.js";
 import User from "../../models/User.js";
 
-// Google OAuth Login
+/*
+arguments: the request and the response handle
+  provides the google window login
+  if user exists: it gives it the correspoding cookies
+  if user doesnt exist: creates user and logs him in
+  returns access token and user info
+*/
+
 const googleAuth = async (req, res) => {
   try {
     const { code } = req.body;
@@ -71,7 +78,11 @@ const googleAuth = async (req, res) => {
   }
 };
 
-// Refresh
+/*
+  same arguments:
+  we validate the jwt_refresh token
+  and proportion the accesstoken to the user
+*/
 const refresh = async (req, res) => {
   try {
     const token = req.cookies.refreshToken;
@@ -88,7 +99,11 @@ const refresh = async (req, res) => {
   }
 };
 
-// Logout
+/*
+  same arguments
+  clears the refresh token cookie,
+  and logs out the user that way basically
+*/
 const logout = (req, res) => {
   res.clearCookie("refreshToken", {
     httpOnly: true,
