@@ -20,3 +20,5 @@ Thumbs.db
 # Vite / frontend build outputs
 frontend/dist/
 
+#path
+frontend/.npmrc
