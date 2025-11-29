@@ -9,8 +9,10 @@ const trashSchema = new mongoose.Schema({
   afterPhotoURL: { type: String, required: true },
   latitude: { type: Number, required: true },
   longitude: { type: Number, required: true },
-  createdAt: { type: Date, default: Date.now }
-});
+},{ timestamps: true });
 
 const Trash = mongoose.model("Trash", trashSchema);
 export default Trash;
+
+//GeoJson for map rendering might need to be implemented
+
