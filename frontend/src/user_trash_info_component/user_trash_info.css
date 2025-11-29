@@ -1,0 +1,44 @@
+#user_trash_info_container {
+    height: 83vh;
+    box-sizing: border-box;
+    padding: 5vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5vh;
+}
+
+#summary_container {
+    height: 18vh;
+    background-color: white;
+    display: flex;
+    border-radius: 2.5vh;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#summary_container div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#summary_container h2, #summary_container p {
+    color: black;
+    margin: 0;
+}
+
+#summary_container h2 {
+    font-size: 4vh;
+}
+
+#summary_container p {
+    font-size: 2vh;
+}
+
+#trash_cleanings_container {
+    display: flex;
+    gap: 2vh;
+    flex-wrap: wrap;
+    height: 55vh;
+    overflow: auto;
+}

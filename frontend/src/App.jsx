@@ -1,16 +1,23 @@
 import { useState, useEffect } from 'react'
 import './App.css'
-import Map_Page from './map_page_component/map_page';
-import Leaderboard_Page from './leaderboard_page_component/leaderboard_page';
+import Page_Map from './page_map_component/page_map';
+import Page_Leaderboard from './page_leaderboard_component/page_leaderboard';
+import Page_User from './page_user_component/page_user';
 
 
 function App() {
 
   // Change pages
   const [ currentPage, setCurrentPage ] = useState("map");
-
   const changeCurrentPage = (newPage) => {
     setCurrentPage(newPage);
+  }
+
+  // User (simple conf to begin userpage)
+  const [ user, setUser ] = useState("aluso");
+  const [ displayUserPopup, setDisplayUserPopup ] = useState(false);
+  const changeUser = (newUser) => {
+    setUser(newUser);
   }
 
   const [canons,setCanons] = useState([]);
@@ -53,8 +60,14 @@ console.log(canons);
 
   return (
     <>
-      {currentPage == "map" && <Map_Page changeCurrentPage={changeCurrentPage}/>}
-      {currentPage == "leaderboard" && <Leaderboard_Page changeCurrentPage={changeCurrentPage}/>}
+      {currentPage == "map" && <Page_Map user={user} 
+                                         changeCurrentPage={changeCurrentPage} 
+                                         displayUserPopup={() => setDisplayUserPopup(true)}/>}
+      {currentPage == "leaderboard" && <Page_Leaderboard user={user} 
+                                                         changeCurrentPage={changeCurrentPage} 
+                                                         displayUserPopup={() => setDisplayUserPopup(true)}/>}
+      {currentPage == "user" && <Page_User user={user} 
+                                           changeCurrentPage={changeCurrentPage}/>}
     </>
   );
 }
