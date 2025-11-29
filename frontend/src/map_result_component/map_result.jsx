@@ -1,5 +1,5 @@
 import './map_result.css'
-import Plant_Details from '../plant_details/plant_details.jsx'
+import Plant_Details from '../plant_details_component/plant_details.jsx'
 
 function Map_Result(props) {
 

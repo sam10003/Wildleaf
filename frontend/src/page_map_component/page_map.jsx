@@ -1,4 +1,4 @@
-import './map_page.css'
+import './page_map.css'
 import Map from '../map_component/map'
 import Map_Result from '../map_result_component/map_result'
 import Button from '../button_component/button';
@@ -10,7 +10,7 @@ import settings_icon from '../assets/gear-fill.svg'
 import trash_icon from '../assets/trash-fill.svg'
 import leaderboard_icon from '../assets/trophy-fill.svg'
 
-function Map_Page(props) {
+function Page_Map(props) {
 
     const [displayedResults, setDisplayedResults] = useState("");
     const [ addTrash, setAddTrash ] = useState(false);
@@ -23,7 +23,8 @@ function Map_Page(props) {
         <>
             {addTrash && <Trash_Popup onClickClose={() => setAddTrash(false)}/>}
             <div id='top_buttons_container'>
-                <Button img={login_icon} text="Login"/>
+                <Button img={login_icon} text="Login" 
+                        onClick={props.user ? (() => {props.changeCurrentPage("user")}) : (() => {props.displayUserPopup()})}/>
                 <Button img={settings_icon} text="Settings"/>
             </div>
             {displayedResults != "" && <Map_Result region={displayedResults}/>}
@@ -36,4 +37,4 @@ function Map_Page(props) {
     )
 }
 
-export default Map_Page
+export default Page_Map

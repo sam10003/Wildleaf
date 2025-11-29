@@ -1,0 +1,39 @@
+#user_page_container {
+    background-color: white;
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 5vh 6vh 5vh 6vh;
+}
+
+#user_page_container > button {
+    position: fixed;
+    top: 5px;
+    left: 5px;
+}
+
+#user_page_container #buttons_container {
+    margin: 0;
+    height: 7vh;
+    display: flex;
+    justify-content: start;
+}
+
+#user_page_container #buttons_container button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2.5vh 2.5vh 0 0;
+    cursor: pointer;
+    font-size: 2vh;
+    font-weight: bold;
+    width: fit-content;
+    box-sizing: border-box;
+    padding: 0 3vh 0 3vh;
+    border: none;
+}
+
+#info_content {
+    background-color: var(--light-green);
+    height: 83vh;
+    border-radius: 0 2.5vh 2.5vh 2.5vh;
+}
