@@ -22,3 +22,6 @@ frontend/dist/
 
 #path
 frontend/.npmrc
+
+#notes
+notes/
