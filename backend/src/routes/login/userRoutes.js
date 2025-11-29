@@ -36,6 +36,8 @@ const deleteAccount = async (req, res) => {
   }
 };
 
+
+// Routes
 const router = express.Router();
 
 router.get("/me", authMiddleware, getProfile);
