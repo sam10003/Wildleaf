@@ -11,8 +11,9 @@ import Canon from './models/Canon_list.js';
 
 //routes
 import IUCN from './routes/test.js'
-import authRoutes from "./routes/login/authRoutes.js";
-import userRoutes from "./routes/login/userRoutes.js";
+import authRoutes from './routes/login/authRoutes.js';
+import userRoutes from './routes/login/userRoutes.js';
+import trashRoutes from './routes/trash/trashRoutes.js';
 
 dotenv.config();
 
@@ -40,7 +41,8 @@ app.use(cors({
 }));
 
 app.use('/IUCN',IUCN);
-app.use("/auth", authRoutes);
-app.use("/users", userRoutes);
+app.use('/auth', authRoutes);
+app.use('/user', userRoutes);
+app.use('/trash', trashRoutes);
 
 export default app;
