@@ -7,9 +7,13 @@ const trashSchema = new mongoose.Schema({
   afterPhotoId: { type: String, required: true },  
   beforePhotoURL: { type: String, required: true },  // URL to cloud storage
   afterPhotoURL: { type: String, required: true },
-  latitude: { type: Number, required: true },
-  longitude: { type: Number, required: true },
+  location: {
+    type: { type: String, enum: ["Point"], default: "Point", required: true },
+    coordinates: { type: [Number], required: true },
+  },
 },{ timestamps: true });
+
+trashSchema.index({ location: "2dsphere" });
 
 const Trash = mongoose.model("Trash", trashSchema);
 export default Trash;

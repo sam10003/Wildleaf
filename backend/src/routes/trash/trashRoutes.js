@@ -53,6 +53,10 @@ const createTrash = async (req, res) => {
     const afterPhoto = req.files.afterPhoto?.[0];
 
     const { latitude, longitude } = req.body;
+    const location = {
+      type: "Point",
+      coordinates: [Number(longitude), Number(latitude)]
+    };
 
     const trash = await Trash.create({
       userId,
@@ -61,8 +65,7 @@ const createTrash = async (req, res) => {
       afterPhotoId: afterPhoto.filename,
       beforePhotoURL: beforePhoto.path,
       afterPhotoURL: afterPhoto.path,
-      latitude,
-      longitude,
+      location
     });
 
     // Increase user score by 10 points
