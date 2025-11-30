@@ -36,11 +36,28 @@ const deleteAccount = async (req, res) => {
   }
 };
 
+const getLeaderboard = async (req, res) => {
+  try {
+    const users = await User
+      .find()
+      .sort({ score: -1 })   // highest score first
+      .select("name picture score"); // only send what the leaderboard needs
+
+    res.json({ users });
+  } catch (err) {
+    res.status(500).json({
+      error: "Failed to fetch leaderboard",
+      details: err.message,
+    });
+  }
+};
+
 
 // Routes
 const router = express.Router();
 
 router.get("/me", authMiddleware, getProfile);
 router.delete("/delete", authMiddleware, deleteAccount);
+router.get("/leaderboard", getLeaderboard);
 
 export default router;
