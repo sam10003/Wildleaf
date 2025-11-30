@@ -8,6 +8,7 @@ function User_Trash_Info(props) {
     const append = (msg) => setLog((l) => l + "\n" + msg);
 
     const [ userTrashs, setUserTrashs ] = useState(null);
+    const [ leaderboard, setLeaderboard ] = useState(null);
 
     useEffect(() => {
         const getTrash = async () => {
@@ -27,7 +28,21 @@ function User_Trash_Info(props) {
             }
         };
 
+        const fetchLeaderboard = async () => {
+            try {
+                const res = await fetch("http://localhost:5000/user/leaderboard");
+                const data = await res.json();
+                setLeaderboard(data.users);
+                console.log(data.users)
+
+                append("Leaderboard: " + JSON.stringify(data.users, null, 2));
+            } catch (err) {
+                append("Leaderboard fetch error: " + err.message);
+            }
+        };
+
         getTrash();
+        fetchLeaderboard();
     }, []);  
 
     return (
@@ -39,8 +54,12 @@ function User_Trash_Info(props) {
                         <h2>{props.user.score}</h2>
                     </div>
                     <div>
-                        <h2>23</h2>
-                        <p>Ranking</p>
+                        {leaderboard && <h2>{
+                            leaderboard
+                                .sort((a, b) => b.score - a.score)
+                                .findIndex(u => u.name === props.user.name) + 1
+                            }</h2>}
+                        {leaderboard && <p>over {leaderboard.length}</p>}
                     </div>
                     <div>
                         <p>Trash Cleaning</p>

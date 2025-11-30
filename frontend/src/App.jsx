@@ -109,7 +109,7 @@ console.log(canons);
 
   return (
     <>
-      <button onClick={() => handleGoogleLogin()}>
+      <button onClick={() => handleGoogleLogin()} style={{"z-index":"10000", "position":"fixed", "top":"5px"}}>
         Login With Google (Popup)
       </button>
       {currentPage == "map" && <Page_Map user={user} 
