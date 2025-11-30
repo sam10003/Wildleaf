@@ -1,7 +1,34 @@
 import './user_trash_info.css'
 import Trash_Details from '../trash_details_component/trash_details'
+import { useState, useEffect } from 'react'
 
 function User_Trash_Info(props) {
+
+    const [ log, setLog ] = useState("");
+    const append = (msg) => setLog((l) => l + "\n" + msg);
+
+    const [ userTrashs, setUserTrashs ] = useState(null);
+
+    useEffect(() => {
+        const getTrash = async () => {
+            if (!props.accessToken) return append("No access token.");
+
+            try {
+                const res = await fetch("http://localhost:5000/trash/all", {
+                    headers: { Authorization: `Bearer ${props.accessToken}` },
+                    credentials: "include",
+                });
+
+                const data = await res.json();
+                setUserTrashs(data);
+                append("GET /trash/all → " + JSON.stringify(data, null, 2));
+            } catch (err) {
+                append("Error fetching trash: " + err.message);
+            }
+        };
+
+        getTrash();
+    }, []);  
 
     return (
         <>
@@ -9,7 +36,7 @@ function User_Trash_Info(props) {
                 <div id='summary_container'>
                     <div>
                         <p>Score</p>
-                        <h2>120</h2>
+                        <h2>{props.user.score}</h2>
                     </div>
                     <div>
                         <h2>23</h2>
@@ -17,17 +44,13 @@ function User_Trash_Info(props) {
                     </div>
                     <div>
                         <p>Trash Cleaning</p>
-                        <h2>12</h2>
+                        {userTrashs && <h2>{userTrashs.length}</h2>}
                     </div>
                 </div>
                 <div id='trash_cleanings_container'>
-                    <Trash_Details/>
-                    <Trash_Details/>
-                    <Trash_Details/>
-                    <Trash_Details/>
-                    <Trash_Details/>
-                    <Trash_Details/>
-                    <Trash_Details/>
+                    {userTrashs && userTrashs.map((trash) => (
+                        <Trash_Details key={trash.id} trash={trash} user={props.user}/>
+                    ))}
                 </div>
             </div>
         </>

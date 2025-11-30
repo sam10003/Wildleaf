@@ -1,24 +1,25 @@
 import './trash_details.css'
-import default_plant_picture from "../assets/default_plant.jpg"
 
 function Trash_Details(props) {
+
+    console.log(props.trash)
 
     return (
         <>
             <div id='trash_container'>
                 <div id='trash_detail_first_layer_container'>
                     <div id='after_img_container'>
-                        <img src={default_plant_picture} alt="" />
+                        <img src={props.trash.afterPhotoURL} alt="" />
                         <p>Before</p>
                     </div>
                     <div id='before_img_container'>
-                        <img src={default_plant_picture} alt="" />
+                        <img src={props.trash.beforePhotoURL} alt="" />
                         <p>After</p>
                     </div>
                 </div>
                 <div id='trash_detail_second_layer_container'>
-                    <h3>Cleaned by aluso</h3>
-                    <p>On the 20/10/2025 at 24.2 -45.2</p>
+                    <h3>Cleaned by {props.user.name}</h3>
+                    <p>On the {props.trash.createdAt.slice(0, 10)} at {props.trash.latitude}, {props.trash.longitude}</p>
                 </div>
             </div>
         </>

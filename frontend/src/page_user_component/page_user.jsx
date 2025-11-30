@@ -31,7 +31,7 @@ function Page_User(props) {
                     </button>
                 </div>
                 <div id='info_content'>
-                    {currentPage === "trash" && <User_Trash_Info user={props.user}/>}
+                    {currentPage === "trash" && <User_Trash_Info user={props.user} accessToken={props.accessToken}/>}
                     {currentPage === "personal" && <User_Personal_Info user={props.user}/>}
                 </div>
             </div>
