@@ -14,11 +14,60 @@ function App() {
   }
 
   // User (simple conf to begin userpage)
-  const [ user, setUser ] = useState("aluso");
-  const [ displayUserPopup, setDisplayUserPopup ] = useState(false);
-  const changeUser = (newUser) => {
-    setUser(newUser);
-  }
+  const [ log, setLog ] = useState("");
+  const append = (msg) => setLog((l) => l + "\n" + msg);
+  const [ user, setUser ] = useState(null);
+  const [ accessToken, setAccessToken ] = useState("");
+
+  // REAL GOOGLE LOGIN, script needed for handleGoogleLogin
+  useEffect(() => {
+    // Load Google Identity Services
+    const script = document.createElement("script");
+    script.src = "https://accounts.google.com/gsi/client";
+    script.async = true;
+    script.defer = true;
+    document.body.appendChild(script);
+  }, []);
+
+  // 1. Test /auth/google
+  const handleGoogleLogin = () => {
+    // check if script is loaded
+    if (!window.google) return append("Google script not loaded yet.");
+
+    // Create an OAuth “code client” 
+    window.google.accounts.oauth2.initCodeClient({
+      client_id: import.meta.env.VITE_GOOGLE_CLIENT_ID,
+      scope: "email profile",
+      ux_mode: "popup",
+      callback: async (response) => {
+        append("Received Google code: " + response.code);
+        
+        // Send the real Google auth code to backend
+        try {
+          const res = await fetch("http://localhost:5000/auth/google", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            credentials: "include",
+            body: JSON.stringify({ code: response.code }),
+          });
+
+          // Get response from backend
+          const data = await res.json();
+          append("Backend /auth/google → " + JSON.stringify(data, null, 2));
+
+          // Save access token and user info
+          if (data.accessToken) {
+            setAccessToken(data.accessToken);
+            localStorage.setItem("accessToken", data.accessToken);
+            setUser(data.user);
+            append("Access Token Saved ✔");
+          }
+        } catch (err) {
+          append("Google login error: " + err.message);
+        }
+      },
+    }).requestCode();
+  };
 
   const [canons,setCanons] = useState([]);
 
@@ -60,14 +109,18 @@ console.log(canons);
 
   return (
     <>
+      <button onClick={() => handleGoogleLogin()}>
+        Login With Google (Popup)
+      </button>
       {currentPage == "map" && <Page_Map user={user} 
-                                         changeCurrentPage={changeCurrentPage} 
-                                         displayUserPopup={() => setDisplayUserPopup(true)}/>}
+                                         accessToken={accessToken}
+                                         changeCurrentPage={changeCurrentPage}/>}
       {currentPage == "leaderboard" && <Page_Leaderboard user={user} 
-                                                         changeCurrentPage={changeCurrentPage} 
-                                                         displayUserPopup={() => setDisplayUserPopup(true)}/>}
-      {currentPage == "user" && <Page_User user={user} 
-                                           changeCurrentPage={changeCurrentPage}/>}
+                                                         accessToken={accessToken}
+                                                         changeCurrentPage={changeCurrentPage}/>}
+      {currentPage == "user" && accessToken && <Page_User user={user} 
+                                                          accessToken={accessToken}
+                                                          changeCurrentPage={changeCurrentPage}/>}
     </>
   );
 }

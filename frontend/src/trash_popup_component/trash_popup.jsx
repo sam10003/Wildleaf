@@ -6,12 +6,42 @@ import { useState } from 'react'
 
 function Trash_Popup(props) {
 
-    const [ endForm, setEndForm ] = useState(false)
+    const [ endForm, setEndForm ] = useState(false);
 
-    const handleSubmit = (values) => {
-        console.log("Form submitted: " + values);
+    const [log, setLog] = useState("");
+    const append = (msg) => setLog((l) => l + "\n" + msg);
+
+    console.log(props.accessToken)
+    console.log(props.user)
+
+    const handleSubmit = async (values) => {
+        if (!props.accessToken) return append("No access token.");
+
+        const formData = new FormData();
+        formData.append("beforePhoto", values.img_before);
+        formData.append("afterPhoto", values.img_after);
+        formData.append("latitude", values.latitude);
+        formData.append("longitude", values.longitude);
+        formData.append("createdAt", values.date);
+
+        try {
+        const res = await fetch("http://localhost:5000/trash/create", {
+            method: "POST",
+            headers: {
+            Authorization: `Bearer ${props.accessToken}`,
+            },
+            credentials: "include",
+            body: formData,
+        });
+
+        const data = await res.json();
+            append("POST /trash/create → " + JSON.stringify(data, null, 2));
+        } catch (err) {
+            append("Error creating trash: " + err.message);
+        }
+
         setEndForm(true);
-    }
+    };
 
     return (
         <>

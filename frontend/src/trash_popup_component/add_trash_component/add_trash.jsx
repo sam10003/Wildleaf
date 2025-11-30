@@ -17,9 +17,9 @@ function Add_Trash(props) {
     const validationSchema = Yup.object().shape({
         img_before: Yup.mixed().required("Image before required"),
         img_after: Yup.mixed().required("Image after required"),
-        latitude: Yup.string()
+        latitude: Yup.number()
             .required('Latitude required'),
-        longitude: Yup.string()
+        longitude: Yup.number()
             .required('Longitude required'),
         date: Yup.date()
             .required("Date required")

@@ -12,7 +12,7 @@ import leaderboard_icon from '../assets/trophy-fill.svg'
 
 function Page_Map(props) {
 
-    const [displayedResults, setDisplayedResults] = useState("");
+    const [ displayedResults, setDisplayedResults ] = useState("");
     const [ addTrash, setAddTrash ] = useState(false);
 
     const selectRegion = (regionName) => {
@@ -21,15 +21,18 @@ function Page_Map(props) {
 
     return (
         <>
-            {addTrash && <Trash_Popup onClickClose={() => setAddTrash(false)}/>}
+            {addTrash && props.accessToken && <Trash_Popup user={props.user} 
+                                                           accessToken={props.accessToken} 
+                                                           onClickClose={() => setAddTrash(false)}/>}
             <div id='top_buttons_container'>
                 <Button img={login_icon} text="Login" 
-                        onClick={props.user ? (() => {props.changeCurrentPage("user")}) : (() => {props.displayUserPopup()})}/>
+                        onClick={props.user ? (() => {props.changeCurrentPage("user")}) : (() => {console.log("not login")})}/>
                 <Button img={settings_icon} text="Settings"/>
             </div>
             {displayedResults != "" && <Map_Result region={displayedResults}/>}
             <div id='bottom_buttons_container' style={displayedResults != "" ? {"left":"51vh"} : {"left":"1vh"}}>
-                <Button img={trash_icon} onClick={() => {setAddTrash(true)}}/>
+                <Button img={trash_icon} 
+                        onClick={() => {setAddTrash(true)}}/>
                 <Button img={leaderboard_icon} onClick={() => { props.changeCurrentPage("leaderboard") }}/>
             </div>
             <Map selectRegion={selectRegion}/>
