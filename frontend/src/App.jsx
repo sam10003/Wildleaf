@@ -109,17 +109,17 @@ console.log(canons);
 
   return (
     <>
-      <button onClick={() => handleGoogleLogin()} style={{"z-index":"10000", "position":"fixed", "top":"5px"}}>
-        Login With Google (Popup)
-      </button>
       {currentPage == "map" && <Page_Map user={user} 
                                          accessToken={accessToken}
+                                         handleGoogleLogin={handleGoogleLogin}
                                          changeCurrentPage={changeCurrentPage}/>}
       {currentPage == "leaderboard" && <Page_Leaderboard user={user} 
                                                          accessToken={accessToken}
                                                          changeCurrentPage={changeCurrentPage}/>}
       {currentPage == "user" && accessToken && <Page_User user={user} 
                                                           accessToken={accessToken}
+                                                          setUser={setUser}
+                                                          setAccessToken={setAccessToken}
                                                           changeCurrentPage={changeCurrentPage}/>}
     </>
   );

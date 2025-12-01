@@ -1,0 +1,22 @@
+#user_personal_info_container {
+    height: 83vh;
+    box-sizing: border-box;
+    padding: 5vh;
+    display: flex;
+    flex-direction: column;
+    color: black;
+}
+
+#user_personal_info_container h2 {
+    margin: 0;
+} 
+
+#user_personal_info_container > p {
+    margin: 0;
+    margin-bottom: 2.5vh;
+} 
+
+#user_personal_info_container button {
+    width: fit-content;
+    background-color: red;
+} 

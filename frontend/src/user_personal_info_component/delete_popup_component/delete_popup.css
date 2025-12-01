@@ -1,0 +1,44 @@
+#delete_popup_container {
+    z-index: 20000;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
+#delete_popup_content {
+    width: 30%;
+    background-color: var(--light-green);
+    position: relative;
+    height: fit-content;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+}
+
+#delete_popup_content div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20%;
+}
+
+#delete_popup_content button {
+    width: 30%;
+    justify-content: center;
+}
+
+#delete_popup_content button:first-of-type {
+    background-color: red;
+}
