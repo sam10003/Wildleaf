@@ -1,16 +1,27 @@
+import mongoose from "mongoose";
 
 /*
-this collection contains:
+Collection: Canon_list
+Contains:
  - every canonical name of any species ranked lower than LC
  - collected from the IUCN
+ - _id is the IUCN ID for easy upsert and tracking
 */
 
-import mongoose from 'mongoose';
+const canonSchema = new mongoose.Schema(
+  {
+    _id: { type: String, required: true }, // IUCN ID
+    name: { type: String, required: true, trim: true, index: true },
+    state: { 
+      type: String, 
+      required: true, 
+      enum: ["CR","EN","VU","NT","DD","EW","EX"], 
+      uppercase: true,
+      trim: true
+    }
+  },
+  { timestamps: true }
+);
 
-const canonSchema = new mongoose.Schema({
-  name: { type: String, required: true },
-  state: { type: String, required: true }
-});
-
-const Canon = mongoose.model('Canon', canonSchema,'Canon_list');
+const Canon = mongoose.model("Canon", canonSchema, "Canon_list");
 export default Canon;
