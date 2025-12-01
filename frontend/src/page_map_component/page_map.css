@@ -3,6 +3,7 @@
     z-index: 10000;
     display: flex;
     gap: 10px;
+    transition: left 0.3s ease-out, right 0.3s ease-out;
 }
 
 #top_buttons_container {
@@ -12,4 +13,5 @@
 
 #bottom_buttons_container {
     bottom: 5px;
+    transition: left 0.3s ease-out;
 }

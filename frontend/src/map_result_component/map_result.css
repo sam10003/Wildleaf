@@ -5,17 +5,75 @@
     height: 100vh;
     width: 50vh;
     position: fixed;
+    top: 0;
+    left: -50vh;
     background-color: #22B14C;
     z-index: 10000;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+    transition: left 0.3s ease-out;
+    will-change: left;
+    overflow: hidden;
+}
+
+/* Animation classes */
+#map_results_container.slide-in {
+    left: 0;
+}
+
+#map_results_container.slide-out {
+    left: -50vh;
+}
+
+/* Close button */
+#close_button {
+    position: absolute;
+    top: 1.5vh;
+    left: 1.5vh;
+    width: 4vh;
+    height: 4vh;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10001;
+    transition: all 0.2s ease;
+    padding: 0;
+}
+
+#close_button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-color: rgba(255, 255, 255, 0.6);
+    transform: scale(1.1);
+}
+
+#close_button:active {
+    transform: scale(0.95);
+}
+
+#close_button img {
+    width: 2.5vh;
+    height: 2.5vh;
+    filter: brightness(0) invert(1);
 }
 
 /* ---------- Title container ---------- */
 #title_container {
     display: flex;
-    align-items: start;
+    align-items: center;
     justify-content: center;
-    height: 6vh;
+    min-height: 8vh;
     width: 100%;
+    padding: 2.5vh 1vh 1.5vh 1vh;
+}
+
+#title_container h2 {
+    color: white;
+    font-size: 2.5vh;
+    margin: 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 /* ---------- Search container ---------- */
@@ -23,20 +81,34 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 10vh;
+    min-height: 10vh;
     width: 100%;
+    padding: 0 1vh 2vh 1vh;
+    margin-bottom: 0.5vh;
 }
 
 #search_field {
-    width: 38vh;
-    height: 3vh;
-    border-radius: 1vh;
-    padding: 0.5vh;
-    padding-left: 1vh;
+    width: 42vh;
+    height: 4.5vh;
+    border-radius: 1.5vh;
+    padding: 1vh;
+    padding-left: 1.5vh;
     background-color: white;
     color: black;
-    font-size: 2vh;
-    border: none;
+    font-size: 1.8vh;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#search_field:focus {
+    outline: none;
+    border-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+#search_field::placeholder {
+    color: #999;
 }
 
 /* ---------- Plants container ---------- */
@@ -44,8 +116,29 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.5vh;
-    height: 90vh;
+    gap: 2vh;
+    height: calc(100vh - 22vh);
     width: 100%;
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 1vh 1vh 2vh 1vh;
+}
+
+/* Custom scrollbar for plants container */
+#plants_container::-webkit-scrollbar {
+    width: 0.8vh;
+}
+
+#plants_container::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 1vh;
+}
+
+#plants_container::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 1vh;
+}
+
+#plants_container::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.5);
 }

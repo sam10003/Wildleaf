@@ -15,7 +15,7 @@ function Plant_Details(props) {
                     </div>
                 </div>
                 <div id='plant_detail_second_layer_container'>
-                    <h3>How to save me?</h3>
+                    <h3>Conservation Status</h3>
                     <p>Main info</p>
                 </div>
             </div>

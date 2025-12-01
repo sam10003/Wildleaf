@@ -29,7 +29,7 @@ function Page_Map(props) {
                         onClick={props.user ? (() => {props.changeCurrentPage("user")}) : (() => {console.log("not login")})}/>
                 <Button img={settings_icon} text="Settings"/>
             </div>
-            {displayedResults != "" && <Map_Result region={displayedResults}/>}
+            {displayedResults != "" && <Map_Result region={displayedResults} onClose={() => setDisplayedResults("")}/>}
             <div id='bottom_buttons_container' style={displayedResults != "" ? {"left":"51vh"} : {"left":"1vh"}}>
                 <Button img={trash_icon} 
                         onClick={() => {setAddTrash(true)}}/>
