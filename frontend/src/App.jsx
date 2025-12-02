@@ -44,7 +44,7 @@ function App() {
         
         // Send the real Google auth code to backend
         try {
-          const res = await fetch("http://localhost:5000/auth/google", {
+          const res = await fetch("http://52.203.48.52:5000/auth/google", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             credentials: "include",
@@ -72,7 +72,7 @@ function App() {
   const [canons,setCanons] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:5000/IUCN/1')
+    fetch('http://52.203.48.52:5000/IUCN/1')
       .then(res => res.json())
       .then(data => setCanons([data]))
       .catch(err => console.error(err));
@@ -86,7 +86,7 @@ useEffect(() => {
 
     while (true) {
       try {
-        const res = await fetch(`http://localhost:5000/IUCN/${index}`);
+        const res = await fetch(`http://52.203.48.52:5000/IUCN/${index}`);
         if (res.status === 404) break; // no more species
         if (!res.ok) throw new Error('Network response was not ok');
 

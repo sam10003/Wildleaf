@@ -15,7 +15,7 @@ function User_Trash_Info(props) {
             if (!props.accessToken) return append("No access token.");
 
             try {
-                const res = await fetch("http://localhost:5000/trash/all", {
+                const res = await fetch("http://52.203.48.52:5000/trash/all", {
                     headers: { Authorization: `Bearer ${props.accessToken}` },
                     credentials: "include",
                 });
@@ -30,7 +30,7 @@ function User_Trash_Info(props) {
 
         const fetchLeaderboard = async () => {
             try {
-                const res = await fetch("http://localhost:5000/user/leaderboard");
+                const res = await fetch("http://52.203.48.52:5000/user/leaderboard");
                 const data = await res.json();
                 setLeaderboard(data.users);
                 console.log(data.users)

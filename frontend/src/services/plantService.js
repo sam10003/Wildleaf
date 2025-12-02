@@ -2,7 +2,7 @@
  * Service to fetch endangered plants by region (progressive/streaming)
  */
 
-const API_BASE_URL = 'http://localhost:5000/IUCN';
+const API_BASE_URL = 'http://52.203.48.52:5000/IUCN';
 
 /**
  * Fetch endangered plants for a specific region with progressive updates

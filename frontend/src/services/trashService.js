@@ -2,7 +2,7 @@
  * Service to fetch trash cleanings from the backend
  */
 
-const API_BASE_URL = 'http://localhost:5000';
+const API_BASE_URL = 'http://52.203.48.52:5000';
 
 /**
  * Fetch all trash cleanings for the logged-in user

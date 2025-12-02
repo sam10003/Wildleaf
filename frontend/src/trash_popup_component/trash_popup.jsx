@@ -25,7 +25,7 @@ function Trash_Popup(props) {
         formData.append("createdAt", values.date);
 
         try {
-        const res = await fetch("http://localhost:5000/trash/create", {
+        const res = await fetch("http://52.203.48.52:5000/trash/create", {
             method: "POST",
             headers: {
             Authorization: `Bearer ${props.accessToken}`,

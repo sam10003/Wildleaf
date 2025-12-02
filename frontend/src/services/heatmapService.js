@@ -2,7 +2,7 @@
  * Service to fetch heatmap data for IUCN plant occurrences
  */
 
-const API_BASE_URL = 'http://localhost:5000/IUCN';
+const API_BASE_URL = 'http://52.203.48.52:5000/IUCN';
 
 /**
  * Fetch occurrence coordinates for heatmap visualization

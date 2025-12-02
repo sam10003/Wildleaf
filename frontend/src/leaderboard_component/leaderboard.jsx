@@ -13,7 +13,7 @@ function Leaderboard(props) {
     useEffect(() => {
         const fetchLeaderboard = async () => {
             try {
-                const res = await fetch("http://localhost:5000/user/leaderboard");
+                const res = await fetch("http://52.203.48.52:5000/user/leaderboard");
                 const data = await res.json();
                 setLeaderboard(data.users);
                 console.log(data.users)
