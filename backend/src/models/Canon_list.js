@@ -12,5 +12,5 @@ const canonSchema = new mongoose.Schema({
   state: { type: String, required: true }
 });
 
-const Canon = mongoose.model('Canon', canonSchema,'Canon_list');
+const Canon = mongoose.model('Canon', canonSchema, 'IUCN');
 export default Canon;

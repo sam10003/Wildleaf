@@ -1,0 +1,3802 @@
+[
+  {
+    "_id": "162015",
+    "name": "Ophioglossum polyphyllum",
+    "state": "DD"
+  },
+  {
+    "_id": "164069",
+    "name": "Teucrium aristatum",
+    "state": "EN"
+  },
+  {
+    "_id": "164279",
+    "name": "Juncus tingitanus",
+    "state": "EN"
+  },
+  {
+    "_id": "164440",
+    "name": "Zannichellia obtusifolia",
+    "state": "NT"
+  },
+  {
+    "_id": "194217",
+    "name": "Quercus pauciradiata",
+    "state": "DD"
+  },
+  {
+    "_id": "200242",
+    "name": "Iris spuria",
+    "state": "VU"
+  },
+  {
+    "_id": "201557",
+    "name": "Drosera anglica",
+    "state": "NT"
+  },
+  {
+    "_id": "202924",
+    "name": "Anacyclus pyrethrum",
+    "state": "VU"
+  },
+  {
+    "_id": "202978",
+    "name": "Centaurea benedicta",
+    "state": "DD"
+  },
+  {
+    "_id": "202990",
+    "name": "Santolina oblongifolia",
+    "state": "NT"
+  },
+  {
+    "_id": "203002",
+    "name": "Drosera intermedia",
+    "state": "NT"
+  },
+  {
+    "_id": "203237",
+    "name": "Iris xiphium",
+    "state": "DD"
+  },
+  {
+    "_id": "203239",
+    "name": "Galeopsis segetum",
+    "state": "DD"
+  },
+  {
+    "_id": "203242",
+    "name": "Hyssopus officinalis",
+    "state": "DD"
+  },
+  {
+    "_id": "203247",
+    "name": "Marrubium vulgare",
+    "state": "NT"
+  },
+  {
+    "_id": "203264",
+    "name": "Satureja hortensis",
+    "state": "DD"
+  },
+  {
+    "_id": "203270",
+    "name": "Sideritis reverchonii",
+    "state": "EN"
+  },
+  {
+    "_id": "203350",
+    "name": "Vitex agnus-castus",
+    "state": "DD"
+  },
+  {
+    "_id": "203367",
+    "name": "Fraxinus excelsior",
+    "state": "NT"
+  },
+  {
+    "_id": "203448",
+    "name": "Rosa gallica",
+    "state": "DD"
+  },
+  {
+    "_id": "203451",
+    "name": "Rosa stylosa",
+    "state": "DD"
+  },
+  {
+    "_id": "203453",
+    "name": "Rosa villosa",
+    "state": "DD"
+  },
+  {
+    "_id": "203484",
+    "name": "Withania somnifera",
+    "state": "DD"
+  },
+  {
+    "_id": "61646",
+    "name": "Succisella andreae-molinae",
+    "state": "EN"
+  },
+  {
+    "_id": "61649",
+    "name": "Euphorbia margalidiana",
+    "state": "VU"
+  },
+  {
+    "_id": "161809",
+    "name": "Aster pyrenaeus",
+    "state": "EN"
+  },
+  {
+    "_id": "161813",
+    "name": "Scrophularia sublyrata",
+    "state": "DD"
+  },
+  {
+    "_id": "161822",
+    "name": "Erigeron frigidus",
+    "state": "EN"
+  },
+  {
+    "_id": "161826",
+    "name": "Lotus kunkelii",
+    "state": "CR"
+  },
+  {
+    "_id": "161827",
+    "name": "Plantago algarbiensis",
+    "state": "EN"
+  },
+  {
+    "_id": "161829",
+    "name": "Sonchus bupleuroides",
+    "state": "EN"
+  },
+  {
+    "_id": "161835",
+    "name": "Eryngium viviparum",
+    "state": "EN"
+  },
+  {
+    "_id": "161838",
+    "name": "Dracocephalum austriacum",
+    "state": "DD"
+  },
+  {
+    "_id": "161843",
+    "name": "Alyssum pintodasilvae",
+    "state": "DD"
+  },
+  {
+    "_id": "161846",
+    "name": "Centaurea pulvinata",
+    "state": "VU"
+  },
+  {
+    "_id": "161847",
+    "name": "Euphorbia handiensis",
+    "state": "VU"
+  },
+  {
+    "_id": "161868",
+    "name": "Teucrium lepicephalum",
+    "state": "EN"
+  },
+  {
+    "_id": "161872",
+    "name": "Convolvulus lopezsocasii",
+    "state": "EN"
+  },
+  {
+    "_id": "161880",
+    "name": "Limonium sventenii",
+    "state": "CR"
+  },
+  {
+    "_id": "161882",
+    "name": "Cheirolophus junonianus",
+    "state": "EN"
+  },
+  {
+    "_id": "161886",
+    "name": "Lotus callis-viridis",
+    "state": "EN"
+  },
+  {
+    "_id": "161890",
+    "name": "Galium viridiflorum",
+    "state": "EN"
+  },
+  {
+    "_id": "161896",
+    "name": "Helichrysum gossypinum",
+    "state": "VU"
+  },
+  {
+    "_id": "161914",
+    "name": "Puccinellia pungens",
+    "state": "VU"
+  },
+  {
+    "_id": "161916",
+    "name": "Kosteletzkya pentacarpos",
+    "state": "VU"
+  },
+  {
+    "_id": "161920",
+    "name": "Jurinea fontqueri",
+    "state": "CR"
+  },
+  {
+    "_id": "161923",
+    "name": "Leontodon boryi",
+    "state": "NT"
+  },
+  {
+    "_id": "161934",
+    "name": "Astragalus tremolsianus",
+    "state": "CR"
+  },
+  {
+    "_id": "161936",
+    "name": "Onopordum nogalesii",
+    "state": "CR"
+  },
+  {
+    "_id": "161937",
+    "name": "Crambe laevigata",
+    "state": "EN"
+  },
+  {
+    "_id": "161943",
+    "name": "Thesium subsucculentum",
+    "state": "CR"
+  },
+  {
+    "_id": "161945",
+    "name": "Carduus myriacanthus",
+    "state": "EN"
+  },
+  {
+    "_id": "161946",
+    "name": "Antirrhinum charidemi",
+    "state": "CR"
+  },
+  {
+    "_id": "161949",
+    "name": "Helosciadium repens",
+    "state": "NT"
+  },
+  {
+    "_id": "161953",
+    "name": "Centaurea pinnata",
+    "state": "NT"
+  },
+  {
+    "_id": "161956",
+    "name": "Rhaponticum exaltatum",
+    "state": "NT"
+  },
+  {
+    "_id": "161958",
+    "name": "Pinguicula nevadensis",
+    "state": "EN"
+  },
+  {
+    "_id": "161967",
+    "name": "Digitalis chalcantha",
+    "state": "CR"
+  },
+  {
+    "_id": "161972",
+    "name": "Petrocoptis grandiflora",
+    "state": "VU"
+  },
+  {
+    "_id": "161975",
+    "name": "Atractylis arbuscula",
+    "state": "EN"
+  },
+  {
+    "_id": "161976",
+    "name": "Odontites granatensis",
+    "state": "CR"
+  },
+  {
+    "_id": "161982",
+    "name": "Coincya rupestris",
+    "state": "EN"
+  },
+  {
+    "_id": "161986",
+    "name": "Antirrhinum lopesianum",
+    "state": "EN"
+  },
+  {
+    "_id": "161990",
+    "name": "Scorzoneroides microcephala",
+    "state": "VU"
+  },
+  {
+    "_id": "161998",
+    "name": "Cheirolophus ghomerythus",
+    "state": "EN"
+  },
+  {
+    "_id": "162057",
+    "name": "Artemisia granatensis",
+    "state": "EN"
+  },
+  {
+    "_id": "162058",
+    "name": "Argyranthemum winteri",
+    "state": "CR"
+  },
+  {
+    "_id": "162002",
+    "name": "Scrophularia herminii",
+    "state": "DD"
+  },
+  {
+    "_id": "162060",
+    "name": "Crepis granatensis",
+    "state": "EN"
+  },
+  {
+    "_id": "162074",
+    "name": "Hypochaeris oligocephala",
+    "state": "CR"
+  },
+  {
+    "_id": "162008",
+    "name": "Veronica micrantha",
+    "state": "VU"
+  },
+  {
+    "_id": "162011",
+    "name": "Crambe arborea",
+    "state": "VU"
+  },
+  {
+    "_id": "162013",
+    "name": "Helianthemum caput-felis",
+    "state": "EN"
+  },
+  {
+    "_id": "162080",
+    "name": "Digitalis isabelliana",
+    "state": "EN"
+  },
+  {
+    "_id": "162020",
+    "name": "Atractylis preauxiana",
+    "state": "EN"
+  },
+  {
+    "_id": "162021",
+    "name": "Cypripedium calceolus",
+    "state": "NT"
+  },
+  {
+    "_id": "162023",
+    "name": "Marsilea strigosa",
+    "state": "VU"
+  },
+  {
+    "_id": "162024",
+    "name": "Dendriopoterium pulidoi",
+    "state": "VU"
+  },
+  {
+    "_id": "162025",
+    "name": "Petrocoptis pseudoviscosa",
+    "state": "VU"
+  },
+  {
+    "_id": "162093",
+    "name": "Spiranthes aestivalis",
+    "state": "DD"
+  },
+  {
+    "_id": "162097",
+    "name": "Helichrysum monogynum",
+    "state": "EN"
+  },
+  {
+    "_id": "162100",
+    "name": "Orobanche densiflora",
+    "state": "DD"
+  },
+  {
+    "_id": "162104",
+    "name": "Sideritis infernalis",
+    "state": "VU"
+  },
+  {
+    "_id": "162108",
+    "name": "Tanacetum ptarmiciflorum",
+    "state": "EN"
+  },
+  {
+    "_id": "162110",
+    "name": "Borderea chouardii",
+    "state": "CR"
+  },
+  {
+    "_id": "162111",
+    "name": "Convolvulus caput-medusae",
+    "state": "NT"
+  },
+  {
+    "_id": "162047",
+    "name": "Centaurea citricolor",
+    "state": "NT"
+  },
+  {
+    "_id": "162116",
+    "name": "Silene hifacensis",
+    "state": "EN"
+  },
+  {
+    "_id": "162117",
+    "name": "Bencomia sphaerocarpa",
+    "state": "CR"
+  },
+  {
+    "_id": "162121",
+    "name": "Crepis pusilla",
+    "state": "DD"
+  },
+  {
+    "_id": "162063",
+    "name": "Limonium arborescens",
+    "state": "NT"
+  },
+  {
+    "_id": "162065",
+    "name": "Aeonium gomerense",
+    "state": "EN"
+  },
+  {
+    "_id": "162136",
+    "name": "Pericallis hadrosoma",
+    "state": "CR"
+  },
+  {
+    "_id": "162140",
+    "name": "Ranunculus weyleri",
+    "state": "VU"
+  },
+  {
+    "_id": "162150",
+    "name": "Onopordum carduelium",
+    "state": "CR"
+  },
+  {
+    "_id": "162158",
+    "name": "Erodium paularense",
+    "state": "EN"
+  },
+  {
+    "_id": "162159",
+    "name": "Erodium astragaloides",
+    "state": "CR"
+  },
+  {
+    "_id": "162162",
+    "name": "Teucrium charidemi",
+    "state": "NT"
+  },
+  {
+    "_id": "162164",
+    "name": "Thymus carnosus",
+    "state": "NT"
+  },
+  {
+    "_id": "162166",
+    "name": "Limonium spectabile",
+    "state": "CR"
+  },
+  {
+    "_id": "162167",
+    "name": "Limonium lanceolatum",
+    "state": "DD"
+  },
+  {
+    "_id": "162168",
+    "name": "Galanthus nivalis",
+    "state": "NT"
+  },
+  {
+    "_id": "162171",
+    "name": "Echium gentianoides",
+    "state": "VU"
+  },
+  {
+    "_id": "162173",
+    "name": "Teline salsoloides",
+    "state": "CR"
+  },
+  {
+    "_id": "162175",
+    "name": "Petrocoptis montsicciana",
+    "state": "NT"
+  },
+  {
+    "_id": "162189",
+    "name": "Sisymbrium cavanillesianum",
+    "state": "VU"
+  },
+  {
+    "_id": "162190",
+    "name": "Asphodelus bento-rainhae",
+    "state": "VU"
+  },
+  {
+    "_id": "162193",
+    "name": "Rumex rupestris",
+    "state": "VU"
+  },
+  {
+    "_id": "162196",
+    "name": "Narcissus viridiflorus",
+    "state": "NT"
+  },
+  {
+    "_id": "162200",
+    "name": "Salvia granatensis",
+    "state": "EN"
+  },
+  {
+    "_id": "162213",
+    "name": "Bupleurum handiense",
+    "state": "EN"
+  },
+  {
+    "_id": "162218",
+    "name": "Stemmacantha cynaroides",
+    "state": "EN"
+  },
+  {
+    "_id": "162220",
+    "name": "Sideritis javalambrensis",
+    "state": "VU"
+  },
+  {
+    "_id": "162221",
+    "name": "Parolinia schizogynoides",
+    "state": "VU"
+  },
+  {
+    "_id": "162223",
+    "name": "Vicia bifoliolata",
+    "state": "CR"
+  },
+  {
+    "_id": "162225",
+    "name": "Globularia ascanii",
+    "state": "CR"
+  },
+  {
+    "_id": "162232",
+    "name": "Monanthes wildpretii",
+    "state": "CR"
+  },
+  {
+    "_id": "162239",
+    "name": "Limonium dendroides",
+    "state": "CR"
+  },
+  {
+    "_id": "162240",
+    "name": "Sideritis marmorea",
+    "state": "CR"
+  },
+  {
+    "_id": "162248",
+    "name": "Astragalus algarbiensis",
+    "state": "DD"
+  },
+  {
+    "_id": "162253",
+    "name": "Scilla odorata",
+    "state": "DD"
+  },
+  {
+    "_id": "162257",
+    "name": "Erodium rupicola",
+    "state": "VU"
+  },
+  {
+    "_id": "162262",
+    "name": "Helianthemum alypoides",
+    "state": "VU"
+  },
+  {
+    "_id": "162264",
+    "name": "Aeonium saundersii",
+    "state": "VU"
+  },
+  {
+    "_id": "162280",
+    "name": "Crambe sventenii",
+    "state": "CR"
+  },
+  {
+    "_id": "162282",
+    "name": "Dorycnium spectabile",
+    "state": "EN"
+  },
+  {
+    "_id": "162283",
+    "name": "Picris willkommii",
+    "state": "EN"
+  },
+  {
+    "_id": "162284",
+    "name": "Ferula latipinna",
+    "state": "VU"
+  },
+  {
+    "_id": "162286",
+    "name": "Laserpitium longiradium",
+    "state": "CR"
+  },
+  {
+    "_id": "162289",
+    "name": "Senecio nevadensis",
+    "state": "VU"
+  },
+  {
+    "_id": "162291",
+    "name": "Seseli intricatum",
+    "state": "EN"
+  },
+  {
+    "_id": "162295",
+    "name": "Santolina elegans",
+    "state": "VU"
+  },
+  {
+    "_id": "162298",
+    "name": "Apteranthes burchardii",
+    "state": "EN"
+  },
+  {
+    "_id": "162299",
+    "name": "Ionopsidium savianum",
+    "state": "NT"
+  },
+  {
+    "_id": "162300",
+    "name": "Hymenostemma pseudanthemis",
+    "state": "DD"
+  },
+  {
+    "_id": "162305",
+    "name": "Silene mariana",
+    "state": "NT"
+  },
+  {
+    "_id": "162308",
+    "name": "Senecio elodes",
+    "state": "EN"
+  },
+  {
+    "_id": "162311",
+    "name": "Dianthus rupicola",
+    "state": "NT"
+  },
+  {
+    "_id": "162312",
+    "name": "Iris boissieri",
+    "state": "CR"
+  },
+  {
+    "_id": "162316",
+    "name": "Anthyllis lusitanica",
+    "state": "DD"
+  },
+  {
+    "_id": "162323",
+    "name": "Thymelaea broteriana",
+    "state": "NT"
+  },
+  {
+    "_id": "162325",
+    "name": "Cheirolophus duranii",
+    "state": "CR"
+  },
+  {
+    "_id": "162329",
+    "name": "Solanum lidii",
+    "state": "CR"
+  },
+  {
+    "_id": "162331",
+    "name": "Festuca duriotagana",
+    "state": "DD"
+  },
+  {
+    "_id": "162332",
+    "name": "Teline rosmarinifolia",
+    "state": "EN"
+  },
+  {
+    "_id": "162338",
+    "name": "Centaurea gadorensis",
+    "state": "VU"
+  },
+  {
+    "_id": "162340",
+    "name": "Argyranthemum lidii",
+    "state": "EN"
+  },
+  {
+    "_id": "162348",
+    "name": "Sideritis discolor",
+    "state": "CR"
+  },
+  {
+    "_id": "162354",
+    "name": "Anagyris latifolia",
+    "state": "EN"
+  },
+  {
+    "_id": "162355",
+    "name": "Colchicum psammophilum",
+    "state": "VU"
+  },
+  {
+    "_id": "162358",
+    "name": "Sideritis serrata",
+    "state": "CR"
+  },
+  {
+    "_id": "162359",
+    "name": "Centaurea borjae",
+    "state": "EN"
+  },
+  {
+    "_id": "162365",
+    "name": "Globularia sarcophylla",
+    "state": "VU"
+  },
+  {
+    "_id": "162369",
+    "name": "Centaurium somedanum",
+    "state": "VU"
+  },
+  {
+    "_id": "162371",
+    "name": "Sideritis cystosiphon",
+    "state": "CR"
+  },
+  {
+    "_id": "162376",
+    "name": "Teucrium turredanum",
+    "state": "VU"
+  },
+  {
+    "_id": "162379",
+    "name": "Soldanella villosa",
+    "state": "VU"
+  },
+  {
+    "_id": "162383",
+    "name": "Bencomia brachystachya",
+    "state": "CR"
+  },
+  {
+    "_id": "162389",
+    "name": "Festuca brigantina",
+    "state": "VU"
+  },
+  {
+    "_id": "162391",
+    "name": "Atropa baetica",
+    "state": "EN"
+  },
+  {
+    "_id": "162393",
+    "name": "Woodwardia radicans",
+    "state": "VU"
+  },
+  {
+    "_id": "163989",
+    "name": "Alternanthera nodiflora",
+    "state": "DD"
+  },
+  {
+    "_id": "163991",
+    "name": "Callitriche lusitanica",
+    "state": "NT"
+  },
+  {
+    "_id": "163993",
+    "name": "Menyanthes trifoliata",
+    "state": "EN"
+  },
+  {
+    "_id": "163996",
+    "name": "Salvinia natans",
+    "state": "NT"
+  },
+  {
+    "_id": "164061",
+    "name": "Eleocharis multicaulis",
+    "state": "NT"
+  },
+  {
+    "_id": "164062",
+    "name": "Elatine macropoda",
+    "state": "DD"
+  },
+  {
+    "_id": "164016",
+    "name": "Callitriche regis-jubae",
+    "state": "EN"
+  },
+  {
+    "_id": "164018",
+    "name": "Carex hordeistichos",
+    "state": "NT"
+  },
+  {
+    "_id": "164089",
+    "name": "Lythrum baeticum",
+    "state": "NT"
+  },
+  {
+    "_id": "164024",
+    "name": "Callitriche truncata",
+    "state": "DD"
+  },
+  {
+    "_id": "164108",
+    "name": "Carex paniculata",
+    "state": "VU"
+  },
+  {
+    "_id": "164117",
+    "name": "Anagallis crassifolia",
+    "state": "VU"
+  },
+  {
+    "_id": "164049",
+    "name": "Helosciadium inundatum",
+    "state": "NT"
+  },
+  {
+    "_id": "164050",
+    "name": "Pinguicula lusitanica",
+    "state": "NT"
+  },
+  {
+    "_id": "164128",
+    "name": "Hydrocharis morsus-ranae",
+    "state": "EN"
+  },
+  {
+    "_id": "164135",
+    "name": "Bulbostylis cioniana",
+    "state": "DD"
+  },
+  {
+    "_id": "164140",
+    "name": "Sparganium erectum",
+    "state": "NT"
+  },
+  {
+    "_id": "164146",
+    "name": "Spartina maritima",
+    "state": "NT"
+  },
+  {
+    "_id": "164153",
+    "name": "Trapa natans",
+    "state": "DD"
+  },
+  {
+    "_id": "164158",
+    "name": "Cyperus papyrus",
+    "state": "VU"
+  },
+  {
+    "_id": "164166",
+    "name": "Sparganium natans",
+    "state": "DD"
+  },
+  {
+    "_id": "164172",
+    "name": "Agrostis tenerrima",
+    "state": "NT"
+  },
+  {
+    "_id": "164179",
+    "name": "Ipomoea sagittata",
+    "state": "VU"
+  },
+  {
+    "_id": "164186",
+    "name": "Juncus sorrentinii",
+    "state": "DD"
+  },
+  {
+    "_id": "164187",
+    "name": "Pilularia minuta",
+    "state": "EN"
+  },
+  {
+    "_id": "164191",
+    "name": "Pteris incompleta",
+    "state": "NT"
+  },
+  {
+    "_id": "164206",
+    "name": "Damasonium bourgaei",
+    "state": "NT"
+  },
+  {
+    "_id": "164216",
+    "name": "Elatine brochonii",
+    "state": "VU"
+  },
+  {
+    "_id": "164237",
+    "name": "Nymphaea alba",
+    "state": "VU"
+  },
+  {
+    "_id": "164239",
+    "name": "Eleocharis uniglumis",
+    "state": "NT"
+  },
+  {
+    "_id": "164247",
+    "name": "Eleocharis acicularis",
+    "state": "VU"
+  },
+  {
+    "_id": "164252",
+    "name": "Callitriche cribrosa",
+    "state": "NT"
+  },
+  {
+    "_id": "164259",
+    "name": "Carex elata",
+    "state": "EN"
+  },
+  {
+    "_id": "164262",
+    "name": "Carex riparia",
+    "state": "VU"
+  },
+  {
+    "_id": "164271",
+    "name": "Elatine alsinastrum",
+    "state": "NT"
+  },
+  {
+    "_id": "164295",
+    "name": "Campanula alata",
+    "state": "NT"
+  },
+  {
+    "_id": "164301",
+    "name": "Alisma gramineum",
+    "state": "NT"
+  },
+  {
+    "_id": "164304",
+    "name": "Mentha cervina",
+    "state": "NT"
+  },
+  {
+    "_id": "164309",
+    "name": "Nymphoides peltata",
+    "state": "CR"
+  },
+  {
+    "_id": "164310",
+    "name": "Phalaris caesia",
+    "state": "DD"
+  },
+  {
+    "_id": "164327",
+    "name": "Baldellia ranunculoides",
+    "state": "NT"
+  },
+  {
+    "_id": "164336",
+    "name": "Juncus littoralis",
+    "state": "NT"
+  },
+  {
+    "_id": "164355",
+    "name": "Exaculum pusillum",
+    "state": "NT"
+  },
+  {
+    "_id": "164362",
+    "name": "Utricularia gibba",
+    "state": "NT"
+  },
+  {
+    "_id": "164369",
+    "name": "Baldellia repens",
+    "state": "VU"
+  },
+  {
+    "_id": "164375",
+    "name": "Althenia orientalis",
+    "state": "DD"
+  },
+  {
+    "_id": "164376",
+    "name": "Carex laevigata",
+    "state": "EN"
+  },
+  {
+    "_id": "164383",
+    "name": "Genista ancistrocarpa",
+    "state": "EN"
+  },
+  {
+    "_id": "164389",
+    "name": "Carex pseudocyperus",
+    "state": "VU"
+  },
+  {
+    "_id": "164415",
+    "name": "Rhynchospora modesti-lucennoi",
+    "state": "EN"
+  },
+  {
+    "_id": "164427",
+    "name": "Damasonium polyspermum",
+    "state": "VU"
+  },
+  {
+    "_id": "164441",
+    "name": "Cyperus michelianus",
+    "state": "NT"
+  },
+  {
+    "_id": "164463",
+    "name": "Glyceria spicata",
+    "state": "DD"
+  },
+  {
+    "_id": "164483",
+    "name": "Eleocharis parvula",
+    "state": "DD"
+  },
+  {
+    "_id": "164487",
+    "name": "Lactuca virosa",
+    "state": "DD"
+  },
+  {
+    "_id": "164491",
+    "name": "Juncus heterophyllus",
+    "state": "NT"
+  },
+  {
+    "_id": "164496",
+    "name": "Potamogeton polygonifolius",
+    "state": "NT"
+  },
+  {
+    "_id": "165109",
+    "name": "Adenocarpus ombriosus",
+    "state": "EN"
+  },
+  {
+    "_id": "165110",
+    "name": "Aeonium balsamiferum",
+    "state": "VU"
+  },
+  {
+    "_id": "165118",
+    "name": "Teline nervosa",
+    "state": "CR"
+  },
+  {
+    "_id": "165120",
+    "name": "Cheirolophus tagananensis",
+    "state": "VU"
+  },
+  {
+    "_id": "165122",
+    "name": "Silene nocteolens",
+    "state": "CR"
+  },
+  {
+    "_id": "165126",
+    "name": "Tanacetum oshanahanii",
+    "state": "CR"
+  },
+  {
+    "_id": "165146",
+    "name": "Ruta microcarpa",
+    "state": "EN"
+  },
+  {
+    "_id": "165149",
+    "name": "Helianthemum teneriffae",
+    "state": "CR"
+  },
+  {
+    "_id": "165159",
+    "name": "Salvia herbanica",
+    "state": "CR"
+  },
+  {
+    "_id": "165164",
+    "name": "Limonium preauxii",
+    "state": "EN"
+  },
+  {
+    "_id": "165184",
+    "name": "Kalidiopsis wagenitzii",
+    "state": "DD"
+  },
+  {
+    "_id": "165186",
+    "name": "Sonchus gandogeri",
+    "state": "CR"
+  },
+  {
+    "_id": "165193",
+    "name": "Rupicapnos africana",
+    "state": "EN"
+  },
+  {
+    "_id": "165205",
+    "name": "Thesium psilotocladum",
+    "state": "CR"
+  },
+  {
+    "_id": "165207",
+    "name": "Cheirolophus metlesicsii",
+    "state": "CR"
+  },
+  {
+    "_id": "165209",
+    "name": "Cheirolophus satarataensis",
+    "state": "VU"
+  },
+  {
+    "_id": "165214",
+    "name": "Lotus maculatus",
+    "state": "CR"
+  },
+  {
+    "_id": "165218",
+    "name": "Lotus eremiticus",
+    "state": "CR"
+  },
+  {
+    "_id": "165220",
+    "name": "Bencomia exstipulata",
+    "state": "VU"
+  },
+  {
+    "_id": "165224",
+    "name": "Cheirolophus falcisectus",
+    "state": "EN"
+  },
+  {
+    "_id": "165226",
+    "name": "Micromeria leucantha",
+    "state": "EN"
+  },
+  {
+    "_id": "165229",
+    "name": "Tolpis glabrescens",
+    "state": "EN"
+  },
+  {
+    "_id": "165236",
+    "name": "Lotus pyranthus",
+    "state": "CR"
+  },
+  {
+    "_id": "165239",
+    "name": "Plantago famarae",
+    "state": "CR"
+  },
+  {
+    "_id": "165246",
+    "name": "Cicer canariense",
+    "state": "EN"
+  },
+  {
+    "_id": "165250",
+    "name": "Echium pininana",
+    "state": "EN"
+  },
+  {
+    "_id": "165252",
+    "name": "Cheirolophus santos-abreui",
+    "state": "CR"
+  },
+  {
+    "_id": "165257",
+    "name": "Crambe scoparia",
+    "state": "EN"
+  },
+  {
+    "_id": "165263",
+    "name": "Limonium perezii",
+    "state": "VU"
+  },
+  {
+    "_id": "165268",
+    "name": "Limonium frutescens",
+    "state": "EN"
+  },
+  {
+    "_id": "165279",
+    "name": "Microcnemum coralloides",
+    "state": "VU"
+  },
+  {
+    "_id": "167819",
+    "name": "Baldellia alpestris",
+    "state": "NT"
+  },
+  {
+    "_id": "167871",
+    "name": "Hydrilla verticillata",
+    "state": "DD"
+  },
+  {
+    "_id": "167916",
+    "name": "Ranunculus batrachioides",
+    "state": "NT"
+  },
+  {
+    "_id": "167919",
+    "name": "Ranunculus ololeucos",
+    "state": "DD"
+  },
+  {
+    "_id": "168964",
+    "name": "Schoenoplectiella supina",
+    "state": "DD"
+  },
+  {
+    "_id": "169911",
+    "name": "Beta macrocarpa",
+    "state": "EN"
+  },
+  {
+    "_id": "170101",
+    "name": "Brassica cossoniana",
+    "state": "DD"
+  },
+  {
+    "_id": "170110",
+    "name": "Brassica oleracea",
+    "state": "DD"
+  },
+  {
+    "_id": "170112",
+    "name": "Brassica rapa",
+    "state": "DD"
+  },
+  {
+    "_id": "171809",
+    "name": "Avena murphyi",
+    "state": "EN"
+  },
+  {
+    "_id": "172063",
+    "name": "Allium subhirsutum",
+    "state": "DD"
+  },
+  {
+    "_id": "172065",
+    "name": "Allium subvillosum",
+    "state": "DD"
+  },
+  {
+    "_id": "172125",
+    "name": "Allium cupani",
+    "state": "DD"
+  },
+  {
+    "_id": "172055",
+    "name": "Avena longiglumis",
+    "state": "DD"
+  },
+  {
+    "_id": "172070",
+    "name": "Cichorium spinosum",
+    "state": "DD"
+  },
+  {
+    "_id": "172076",
+    "name": "Daucus aureus",
+    "state": "DD"
+  },
+  {
+    "_id": "172153",
+    "name": "Allium schmitzii",
+    "state": "VU"
+  },
+  {
+    "_id": "172157",
+    "name": "Allium triquetrum",
+    "state": "DD"
+  },
+  {
+    "_id": "172158",
+    "name": "Allium ericetorum",
+    "state": "DD"
+  },
+  {
+    "_id": "172160",
+    "name": "Allium pruinatum",
+    "state": "DD"
+  },
+  {
+    "_id": "172165",
+    "name": "Lactuca plumieri",
+    "state": "DD"
+  },
+  {
+    "_id": "172167",
+    "name": "Allium melananthum",
+    "state": "NT"
+  },
+  {
+    "_id": "172170",
+    "name": "Malus sylvestris",
+    "state": "DD"
+  },
+  {
+    "_id": "172180",
+    "name": "Lactuca singularis",
+    "state": "VU"
+  },
+  {
+    "_id": "172193",
+    "name": "Allium polyanthum",
+    "state": "DD"
+  },
+  {
+    "_id": "172224",
+    "name": "Allium chrysonemum",
+    "state": "DD"
+  },
+  {
+    "_id": "172227",
+    "name": "Lactuca perennis",
+    "state": "DD"
+  },
+  {
+    "_id": "172260",
+    "name": "Patellifolia webbiana",
+    "state": "CR"
+  },
+  {
+    "_id": "172269",
+    "name": "Avena brevis",
+    "state": "DD"
+  },
+  {
+    "_id": "172272",
+    "name": "Allium palentinum",
+    "state": "DD"
+  },
+  {
+    "_id": "172275",
+    "name": "Allium pyrenaicum",
+    "state": "VU"
+  },
+  {
+    "_id": "172276",
+    "name": "Prunus prostrata",
+    "state": "DD"
+  },
+  {
+    "_id": "172281",
+    "name": "Allium commutatum",
+    "state": "DD"
+  },
+  {
+    "_id": "173011",
+    "name": "Pyrus cordata",
+    "state": "DD"
+  },
+  {
+    "_id": "175248",
+    "name": "Fimbristylis turkestanica",
+    "state": "DD"
+  },
+  {
+    "_id": "175272",
+    "name": "Isoetes brochonii",
+    "state": "DD"
+  },
+  {
+    "_id": "175291",
+    "name": "Zannichellia contorta",
+    "state": "EN"
+  },
+  {
+    "_id": "175952",
+    "name": "Serapias nurrica",
+    "state": "NT"
+  },
+  {
+    "_id": "175959",
+    "name": "Gennaria diphylla",
+    "state": "EN"
+  },
+  {
+    "_id": "175978",
+    "name": "Limodorum trabutianum",
+    "state": "NT"
+  },
+  {
+    "_id": "175982",
+    "name": "Orchis spitzelii",
+    "state": "NT"
+  },
+  {
+    "_id": "175995",
+    "name": "Epipactis microphylla",
+    "state": "NT"
+  },
+  {
+    "_id": "176010",
+    "name": "Ophrys atlantica",
+    "state": "EN"
+  },
+  {
+    "_id": "176030",
+    "name": "Anacamptis morio",
+    "state": "NT"
+  },
+  {
+    "_id": "176032",
+    "name": "Platanthera algeriensis",
+    "state": "NT"
+  },
+  {
+    "_id": "176043",
+    "name": "Himantoglossum metlesicsianum",
+    "state": "EN"
+  },
+  {
+    "_id": "176391",
+    "name": "Rorippa hispanica",
+    "state": "DD"
+  },
+  {
+    "_id": "176406",
+    "name": "Asparagus plocamoides",
+    "state": "VU"
+  },
+  {
+    "_id": "176413",
+    "name": "Crambe gomerae",
+    "state": "VU"
+  },
+  {
+    "_id": "176422",
+    "name": "Lepidium ramburei",
+    "state": "DD"
+  },
+  {
+    "_id": "176424",
+    "name": "Asparagus fallax",
+    "state": "EN"
+  },
+  {
+    "_id": "176430",
+    "name": "Barbarea verna",
+    "state": "DD"
+  },
+  {
+    "_id": "176441",
+    "name": "Isatis platyloba",
+    "state": "VU"
+  },
+  {
+    "_id": "176453",
+    "name": "Asparagus nesiotes",
+    "state": "EN"
+  },
+  {
+    "_id": "176463",
+    "name": "Crambe microcarpa",
+    "state": "EN"
+  },
+  {
+    "_id": "176488",
+    "name": "Lathyrus amphicarpos",
+    "state": "NT"
+  },
+  {
+    "_id": "176499",
+    "name": "Medicago soleirolii",
+    "state": "DD"
+  },
+  {
+    "_id": "176509",
+    "name": "Medicago meyeri",
+    "state": "DD"
+  },
+  {
+    "_id": "176532",
+    "name": "Lepidium carrerasii",
+    "state": "DD"
+  },
+  {
+    "_id": "176533",
+    "name": "Asparagus arborescens",
+    "state": "VU"
+  },
+  {
+    "_id": "176544",
+    "name": "Medicago secundiflora",
+    "state": "DD"
+  },
+  {
+    "_id": "176563",
+    "name": "Camelina alyssum",
+    "state": "DD"
+  },
+  {
+    "_id": "176565",
+    "name": "Camelina sativa",
+    "state": "DD"
+  },
+  {
+    "_id": "176569",
+    "name": "Barbarea intermedia",
+    "state": "DD"
+  },
+  {
+    "_id": "176574",
+    "name": "Eruca pinnatifida",
+    "state": "DD"
+  },
+  {
+    "_id": "176579",
+    "name": "Crambe scaberrima",
+    "state": "VU"
+  },
+  {
+    "_id": "176583",
+    "name": "Asparagus maritimus",
+    "state": "DD"
+  },
+  {
+    "_id": "176588",
+    "name": "Asparagus pastorianus",
+    "state": "VU"
+  },
+  {
+    "_id": "176594",
+    "name": "Diplotaxis siifolia",
+    "state": "NT"
+  },
+  {
+    "_id": "176604",
+    "name": "Crambe pritzelii",
+    "state": "EN"
+  },
+  {
+    "_id": "180557",
+    "name": "Crambe feuillei",
+    "state": "CR"
+  },
+  {
+    "_id": "180558",
+    "name": "Crambe wildpretii",
+    "state": "CR"
+  },
+  {
+    "_id": "180559",
+    "name": "Crambe tamadabensis",
+    "state": "CR"
+  },
+  {
+    "_id": "185697",
+    "name": "Carex mairei",
+    "state": "NT"
+  },
+  {
+    "_id": "195480",
+    "name": "Colchicum gramineum",
+    "state": "VU"
+  },
+  {
+    "_id": "195482",
+    "name": "Canariothamnus hermosae",
+    "state": "VU"
+  },
+  {
+    "_id": "195484",
+    "name": "Micromeria glomerata",
+    "state": "CR"
+  },
+  {
+    "_id": "30314",
+    "name": "Prunus ramburii",
+    "state": "VU"
+  },
+  {
+    "_id": "39248",
+    "name": "Gradsteinia torrenticola",
+    "state": "VU"
+  },
+  {
+    "_id": "42295",
+    "name": "Abies pinsapo",
+    "state": "EN"
+  },
+  {
+    "_id": "61658",
+    "name": "Echium handiense",
+    "state": "CR"
+  },
+  {
+    "_id": "61602",
+    "name": "Narcissus longispathus",
+    "state": "EN"
+  },
+  {
+    "_id": "61660",
+    "name": "Echium valentinum",
+    "state": "EN"
+  },
+  {
+    "_id": "61661",
+    "name": "Gyrocaryum oppositifolium",
+    "state": "CR"
+  },
+  {
+    "_id": "61606",
+    "name": "Brimeura duvigneaudii",
+    "state": "CR"
+  },
+  {
+    "_id": "61608",
+    "name": "Helosciadium bermejoi",
+    "state": "CR"
+  },
+  {
+    "_id": "61676",
+    "name": "Antirrhinum subbaeticum",
+    "state": "EN"
+  },
+  {
+    "_id": "61612",
+    "name": "Carum foetidum",
+    "state": "NT"
+  },
+  {
+    "_id": "61614",
+    "name": "Ligusticum huteri",
+    "state": "CR"
+  },
+  {
+    "_id": "61680",
+    "name": "Helianthemum guerrae",
+    "state": "EN"
+  },
+  {
+    "_id": "61615",
+    "name": "Naufraga balearica",
+    "state": "CR"
+  },
+  {
+    "_id": "61626",
+    "name": "Senecio alboranicus",
+    "state": "CR"
+  },
+  {
+    "_id": "61627",
+    "name": "Jasione mansanetiana",
+    "state": "EN"
+  },
+  {
+    "_id": "61631",
+    "name": "Diplotaxis siettiana",
+    "state": "CR"
+  },
+  {
+    "_id": "61633",
+    "name": "Arenaria bolosii",
+    "state": "CR"
+  },
+  {
+    "_id": "61634",
+    "name": "Arenaria nevadensis",
+    "state": "CR"
+  },
+  {
+    "_id": "61635",
+    "name": "Cerastium sventenii",
+    "state": "EN"
+  },
+  {
+    "_id": "61637",
+    "name": "Moehringia fontqueri",
+    "state": "EN"
+  },
+  {
+    "_id": "61640",
+    "name": "Silene diclinis",
+    "state": "EN"
+  },
+  {
+    "_id": "61641",
+    "name": "Silene fernandezii",
+    "state": "EN"
+  },
+  {
+    "_id": "61642",
+    "name": "Silene gazulensis",
+    "state": "CR"
+  },
+  {
+    "_id": "61644",
+    "name": "Silene sennenii",
+    "state": "EN"
+  },
+  {
+    "_id": "61650",
+    "name": "Astragalus cavanillesii",
+    "state": "CR"
+  },
+  {
+    "_id": "61653",
+    "name": "Medicago citrina",
+    "state": "CR"
+  },
+  {
+    "_id": "61662",
+    "name": "Glandora nitida",
+    "state": "EN"
+  },
+  {
+    "_id": "61664",
+    "name": "Solenanthus reverchonii",
+    "state": "CR"
+  },
+  {
+    "_id": "61666",
+    "name": "Teucrium balthazaris",
+    "state": "NT"
+  },
+  {
+    "_id": "62857",
+    "name": "Prunus lusitanica",
+    "state": "VU"
+  },
+  {
+    "_id": "13507110",
+    "name": "Alpinia zerumbet",
+    "state": "DD"
+  },
+  {
+    "_id": "16348802",
+    "name": "Juniperus navicularis",
+    "state": "NT"
+  },
+  {
+    "_id": "13165092",
+    "name": "Desmazeria sicula",
+    "state": "NT"
+  },
+  {
+    "_id": "13168432",
+    "name": "Trisetum glaciale",
+    "state": "VU"
+  },
+  {
+    "_id": "13142311",
+    "name": "Gagea lusitanica",
+    "state": "DD"
+  },
+  {
+    "_id": "13163670",
+    "name": "Romulea bifrons",
+    "state": "NT"
+  },
+  {
+    "_id": "13142314",
+    "name": "Gagea mauritanica",
+    "state": "NT"
+  },
+  {
+    "_id": "18007324",
+    "name": "Festuca clementei",
+    "state": "CR"
+  },
+  {
+    "_id": "13142217",
+    "name": "Gagea elliptica",
+    "state": "EN"
+  },
+  {
+    "_id": "162313",
+    "name": "Colchicum europaeum",
+    "state": "NT"
+  },
+  {
+    "_id": "13133547",
+    "name": "Biarum mendax",
+    "state": "NT"
+  },
+  {
+    "_id": "13167917",
+    "name": "Helictochloa levis",
+    "state": "EN"
+  },
+  {
+    "_id": "13167905",
+    "name": "Helictochloa crassifolia",
+    "state": "EN"
+  },
+  {
+    "_id": "15418073",
+    "name": "Prospero obtusifolium",
+    "state": "NT"
+  },
+  {
+    "_id": "13164066",
+    "name": "Romulea clusiana",
+    "state": "DD"
+  },
+  {
+    "_id": "13161983",
+    "name": "Iris serotina",
+    "state": "DD"
+  },
+  {
+    "_id": "13147041",
+    "name": "Narcissus nivalis",
+    "state": "DD"
+  },
+  {
+    "_id": "13147005",
+    "name": "Narcissus hispanicus",
+    "state": "DD"
+  },
+  {
+    "_id": "13146995",
+    "name": "Narcissus gaditanus",
+    "state": "NT"
+  },
+  {
+    "_id": "13146981",
+    "name": "Narcissus cuatrecasasii",
+    "state": "NT"
+  },
+  {
+    "_id": "13147015",
+    "name": "Narcissus lusitanicus",
+    "state": "VU"
+  },
+  {
+    "_id": "13146941",
+    "name": "Narcissus albicans",
+    "state": "DD"
+  },
+  {
+    "_id": "13164399",
+    "name": "Carex helodes",
+    "state": "NT"
+  },
+  {
+    "_id": "13164466",
+    "name": "Agrostis barceloi",
+    "state": "CR"
+  },
+  {
+    "_id": "172237",
+    "name": "Prunus webbii",
+    "state": "DD"
+  },
+  {
+    "_id": "19892375",
+    "name": "Hedysarum flexuosum",
+    "state": "NT"
+  },
+  {
+    "_id": "21343100",
+    "name": "Avena strigosa",
+    "state": "DD"
+  },
+  {
+    "_id": "46879459",
+    "name": "Acis valentina",
+    "state": "EN"
+  },
+  {
+    "_id": "61682",
+    "name": "Narcissus nevadensis",
+    "state": "EN"
+  },
+  {
+    "_id": "50135950",
+    "name": "Prunus domestica",
+    "state": "DD"
+  },
+  {
+    "_id": "57455658",
+    "name": "Narcissus segurensis",
+    "state": "VU"
+  },
+  {
+    "_id": "57456144",
+    "name": "Narcissus yepesii",
+    "state": "VU"
+  },
+  {
+    "_id": "57471077",
+    "name": "Stipa tenacissima",
+    "state": "VU"
+  },
+  {
+    "_id": "61918934",
+    "name": "Fraxinus pennsylvanica",
+    "state": "CR"
+  },
+  {
+    "_id": "61966807",
+    "name": "Ulmus glabra",
+    "state": "VU"
+  },
+  {
+    "_id": "61967009",
+    "name": "Ulmus laevis",
+    "state": "DD"
+  },
+  {
+    "_id": "63530",
+    "name": "Populus nigra",
+    "state": "DD"
+  },
+  {
+    "_id": "19218731",
+    "name": "Ulmus minor",
+    "state": "DD"
+  },
+  {
+    "_id": "76439280",
+    "name": "Festuca paucispicula",
+    "state": "DD"
+  },
+  {
+    "_id": "78809256",
+    "name": "Quercus canariensis",
+    "state": "NT"
+  },
+  {
+    "_id": "79726923",
+    "name": "Dracaena tamaranae",
+    "state": "CR"
+  },
+  {
+    "_id": "79928148",
+    "name": "Tamarix boveana",
+    "state": "VU"
+  },
+  {
+    "_id": "37669",
+    "name": "Heberdenia excelsa",
+    "state": "VU"
+  },
+  {
+    "_id": "30322",
+    "name": "Arbutus canariensis",
+    "state": "NT"
+  },
+  {
+    "_id": "37673",
+    "name": "Maytenus canariensis",
+    "state": "NT"
+  },
+  {
+    "_id": "82123704",
+    "name": "Juncus fernandez-carvajaliae",
+    "state": "DD"
+  },
+  {
+    "_id": "83467771",
+    "name": "Asplenium aethiopicum",
+    "state": "VU"
+  },
+  {
+    "_id": "83468031",
+    "name": "Asplenium anceps",
+    "state": "EN"
+  },
+  {
+    "_id": "83468428",
+    "name": "Asplenium balearicum",
+    "state": "NT"
+  },
+  {
+    "_id": "83474922",
+    "name": "Asplenium lolegnamense",
+    "state": "VU"
+  },
+  {
+    "_id": "83475652",
+    "name": "Asplenium majoricum",
+    "state": "VU"
+  },
+  {
+    "_id": "83503613",
+    "name": "Asplenium octoploideum",
+    "state": "NT"
+  },
+  {
+    "_id": "83506988",
+    "name": "Asplenium seelosii",
+    "state": "NT"
+  },
+  {
+    "_id": "83508309",
+    "name": "Asplenium terorense",
+    "state": "EN"
+  },
+  {
+    "_id": "16349692",
+    "name": "Juniperus turbinata",
+    "state": "NT"
+  },
+  {
+    "_id": "162107",
+    "name": "Micropyropsis tuberosa",
+    "state": "EN"
+  },
+  {
+    "_id": "84374197",
+    "name": "Funariella curviseta",
+    "state": "VU"
+  },
+  {
+    "_id": "83649916",
+    "name": "Dryopteris tyrrhena",
+    "state": "NT"
+  },
+  {
+    "_id": "162293",
+    "name": "Culcita macrocarpa",
+    "state": "NT"
+  },
+  {
+    "_id": "164101",
+    "name": "Isoetes fluitans",
+    "state": "EN"
+  },
+  {
+    "_id": "83513755",
+    "name": "Isoetes gymnocarpa",
+    "state": "DD"
+  },
+  {
+    "_id": "163983",
+    "name": "Isoetes delilei",
+    "state": "NT"
+  },
+  {
+    "_id": "164197",
+    "name": "Isoetes longissima",
+    "state": "NT"
+  },
+  {
+    "_id": "161966",
+    "name": "Marsilea batardae",
+    "state": "EN"
+  },
+  {
+    "_id": "161864",
+    "name": "Marsilea quadrifolia",
+    "state": "VU"
+  },
+  {
+    "_id": "165195",
+    "name": "Botrychium matricariifolium",
+    "state": "NT"
+  },
+  {
+    "_id": "161906",
+    "name": "Botrychium simplex",
+    "state": "EN"
+  },
+  {
+    "_id": "18821051",
+    "name": "Psilotum nudum",
+    "state": "CR"
+  },
+  {
+    "_id": "83652079",
+    "name": "Paragymnopteris marantae",
+    "state": "NT"
+  },
+  {
+    "_id": "78680201",
+    "name": "Pellaea calomelanos",
+    "state": "EN"
+  },
+  {
+    "_id": "83644565",
+    "name": "Woodsia pulchella",
+    "state": "NT"
+  },
+  {
+    "_id": "78582535",
+    "name": "Acanthocoleus aberrans",
+    "state": "EN"
+  },
+  {
+    "_id": "84534598",
+    "name": "Acaulon casasianum",
+    "state": "NT"
+  },
+  {
+    "_id": "83660175",
+    "name": "Anomobryum lusitanicum",
+    "state": "VU"
+  },
+  {
+    "_id": "86108064",
+    "name": "Cotoneaster majoricensis",
+    "state": "CR"
+  },
+  {
+    "_id": "51207347",
+    "name": "Betula celtiberica",
+    "state": "DD"
+  },
+  {
+    "_id": "83751963",
+    "name": "Teline tribracteolata",
+    "state": "EN"
+  },
+  {
+    "_id": "83756078",
+    "name": "Genista berberidea",
+    "state": "NT"
+  },
+  {
+    "_id": "83756729",
+    "name": "Genista haenseleri",
+    "state": "EN"
+  },
+  {
+    "_id": "83759230",
+    "name": "Genista lucida",
+    "state": "NT"
+  },
+  {
+    "_id": "83772394",
+    "name": "Rhamnus ludovici-salvatoris",
+    "state": "EN"
+  },
+  {
+    "_id": "86124273",
+    "name": "Malva canariensis",
+    "state": "DD"
+  },
+  {
+    "_id": "85624112",
+    "name": "Homalothecium mandonii",
+    "state": "VU"
+  },
+  {
+    "_id": "86212254",
+    "name": "Rhynchostegiella bourgaeana",
+    "state": "EN"
+  },
+  {
+    "_id": "86212381",
+    "name": "Rhynchostegiella trichophylla",
+    "state": "VU"
+  },
+  {
+    "_id": "83660179",
+    "name": "Brachymenium notarisii",
+    "state": "NT"
+  },
+  {
+    "_id": "84372159",
+    "name": "Rhamphidium purpuratum",
+    "state": "NT"
+  },
+  {
+    "_id": "86484885",
+    "name": "Echinodium spinosum",
+    "state": "EN"
+  },
+  {
+    "_id": "87532611",
+    "name": "Exormotheca pustulosa",
+    "state": "NT"
+  },
+  {
+    "_id": "84768123",
+    "name": "Fissidens coacervatus",
+    "state": "NT"
+  },
+  {
+    "_id": "84768383",
+    "name": "Fissidens serratus",
+    "state": "EN"
+  },
+  {
+    "_id": "39193",
+    "name": "Frullania polysticta",
+    "state": "VU"
+  },
+  {
+    "_id": "84374221",
+    "name": "Goniomitrium seroi",
+    "state": "NT"
+  },
+  {
+    "_id": "85842479",
+    "name": "Grimmia curviseta",
+    "state": "VU"
+  },
+  {
+    "_id": "84711905",
+    "name": "Andoa berthelotiana",
+    "state": "VU"
+  },
+  {
+    "_id": "87464517",
+    "name": "Pseudotaxiphyllum laetevirens",
+    "state": "NT"
+  },
+  {
+    "_id": "87543255",
+    "name": "Cololejeunea schaeferi",
+    "state": "VU"
+  },
+  {
+    "_id": "87543356",
+    "name": "Lejeunea canariensis",
+    "state": "VU"
+  },
+  {
+    "_id": "87543392",
+    "name": "Lejeunea flava",
+    "state": "NT"
+  },
+  {
+    "_id": "87543416",
+    "name": "Lejeunea mandonii",
+    "state": "VU"
+  },
+  {
+    "_id": "87574551",
+    "name": "Telaranea azorica",
+    "state": "EN"
+  },
+  {
+    "_id": "87465413",
+    "name": "Leptodon longisetus",
+    "state": "VU"
+  },
+  {
+    "_id": "84372194",
+    "name": "Leucobryum albidum",
+    "state": "DD"
+  },
+  {
+    "_id": "84372379",
+    "name": "Microcampylopus laevigatus",
+    "state": "NT"
+  },
+  {
+    "_id": "87466065",
+    "name": "Leucodon canariensis",
+    "state": "NT"
+  },
+  {
+    "_id": "87466129",
+    "name": "Leucodon treleasei",
+    "state": "VU"
+  },
+  {
+    "_id": "84374816",
+    "name": "Tetrastichium fontanum",
+    "state": "VU"
+  },
+  {
+    "_id": "84374835",
+    "name": "Tetrastichium virens",
+    "state": "NT"
+  },
+  {
+    "_id": "87519296",
+    "name": "Heteroscyphus denticulatus",
+    "state": "NT"
+  },
+  {
+    "_id": "87467257",
+    "name": "Exsertotheca intermedia",
+    "state": "VU"
+  },
+  {
+    "_id": "87467271",
+    "name": "Homalia lusitanica",
+    "state": "NT"
+  },
+  {
+    "_id": "87467286",
+    "name": "Homalia webbiana",
+    "state": "EN"
+  },
+  {
+    "_id": "87467381",
+    "name": "Neckera cephalonica",
+    "state": "NT"
+  },
+  {
+    "_id": "87467838",
+    "name": "Thamnobryum maderense",
+    "state": "NT"
+  },
+  {
+    "_id": "87539260",
+    "name": "Orthotrichum handiense",
+    "state": "CR"
+  },
+  {
+    "_id": "87521959",
+    "name": "Plagiochila maderensis",
+    "state": "EN"
+  },
+  {
+    "_id": "87522363",
+    "name": "Plagiochila stricta",
+    "state": "EN"
+  },
+  {
+    "_id": "87522367",
+    "name": "Plagiochila virginica",
+    "state": "EN"
+  },
+  {
+    "_id": "84534733",
+    "name": "Aloina humilis",
+    "state": "DD"
+  },
+  {
+    "_id": "87563457",
+    "name": "Tortella limbata",
+    "state": "VU"
+  },
+  {
+    "_id": "87564085",
+    "name": "Tortula bogosica",
+    "state": "NT"
+  },
+  {
+    "_id": "87544340",
+    "name": "Radula carringtonii",
+    "state": "NT"
+  },
+  {
+    "_id": "87544353",
+    "name": "Radula holtii",
+    "state": "NT"
+  },
+  {
+    "_id": "39211",
+    "name": "Radula jonesii",
+    "state": "EN"
+  },
+  {
+    "_id": "87544393",
+    "name": "Radula wichurae",
+    "state": "NT"
+  },
+  {
+    "_id": "112508337",
+    "name": "Amphidium curvipes",
+    "state": "NT"
+  },
+  {
+    "_id": "84516246",
+    "name": "Riella affinis",
+    "state": "EN"
+  },
+  {
+    "_id": "87530387",
+    "name": "Solenostoma callithrix",
+    "state": "NT"
+  },
+  {
+    "_id": "83659800",
+    "name": "Andreaea heinemannii",
+    "state": "NT"
+  },
+  {
+    "_id": "87538851",
+    "name": "Aneura latissima",
+    "state": "EN"
+  },
+  {
+    "_id": "87531134",
+    "name": "Asterella africana",
+    "state": "VU"
+  },
+  {
+    "_id": "87531834",
+    "name": "Plagiochasma appendiculatum",
+    "state": "VU"
+  },
+  {
+    "_id": "86212194",
+    "name": "Pseudorhynchostegiella duriaei",
+    "state": "NT"
+  },
+  {
+    "_id": "86212399",
+    "name": "Rhynchostegium confusum",
+    "state": "VU"
+  },
+  {
+    "_id": "84329423",
+    "name": "Bruchia vogesiaca",
+    "state": "EN"
+  },
+  {
+    "_id": "83663347",
+    "name": "Bryum valparaisense",
+    "state": "VU"
+  },
+  {
+    "_id": "87492490",
+    "name": "Cephaloziella calyculata",
+    "state": "NT"
+  },
+  {
+    "_id": "87492600",
+    "name": "Cephaloziella dentata",
+    "state": "EN"
+  },
+  {
+    "_id": "87580393",
+    "name": "Cinclidotus vivesii",
+    "state": "DD"
+  },
+  {
+    "_id": "87531965",
+    "name": "Clevea spathysii",
+    "state": "NT"
+  },
+  {
+    "_id": "86484850",
+    "name": "Dendrocryphaea lamyana",
+    "state": "NT"
+  },
+  {
+    "_id": "84740176",
+    "name": "Dicranum crassifolium",
+    "state": "NT"
+  },
+  {
+    "_id": "87532638",
+    "name": "Exormotheca welwitschii",
+    "state": "EN"
+  },
+  {
+    "_id": "84768272",
+    "name": "Fissidens monguillonii",
+    "state": "DD"
+  },
+  {
+    "_id": "86186282",
+    "name": "Fossombronia echinata",
+    "state": "NT"
+  },
+  {
+    "_id": "85841445",
+    "name": "Entosthodon commutatus",
+    "state": "EN"
+  },
+  {
+    "_id": "85841466",
+    "name": "Entosthodon duriaei",
+    "state": "NT"
+  },
+  {
+    "_id": "85841515",
+    "name": "Entosthodon mouretii",
+    "state": "NT"
+  },
+  {
+    "_id": "85841644",
+    "name": "Entosthodon schimperi",
+    "state": "NT"
+  },
+  {
+    "_id": "84374283",
+    "name": "Gigaspermum mouretii",
+    "state": "NT"
+  },
+  {
+    "_id": "84374329",
+    "name": "Oedipodiella australis",
+    "state": "EN"
+  },
+  {
+    "_id": "85842737",
+    "name": "Coscinodon horridus",
+    "state": "VU"
+  },
+  {
+    "_id": "85843920",
+    "name": "Racomitrium hespericum",
+    "state": "NT"
+  },
+  {
+    "_id": "85844256",
+    "name": "Racomitrium lamprocarpum",
+    "state": "NT"
+  },
+  {
+    "_id": "85844297",
+    "name": "Racomitrium lusitanicum",
+    "state": "EN"
+  },
+  {
+    "_id": "85846031",
+    "name": "Schistidium occidentale",
+    "state": "CR"
+  },
+  {
+    "_id": "85850821",
+    "name": "Hedwigia striata",
+    "state": "NT"
+  },
+  {
+    "_id": "87468277",
+    "name": "Isopterygium tenerum",
+    "state": "EN"
+  },
+  {
+    "_id": "84534860",
+    "name": "Pohlia bolanderi",
+    "state": "EN"
+  },
+  {
+    "_id": "84329225",
+    "name": "Schizymenium pontevedrense",
+    "state": "VU"
+  },
+  {
+    "_id": "87467194",
+    "name": "Exsertotheca baetica",
+    "state": "EN"
+  },
+  {
+    "_id": "87567075",
+    "name": "Orthodontium pellucens",
+    "state": "VU"
+  },
+  {
+    "_id": "87539208",
+    "name": "Orthotrichum casasianum",
+    "state": "CR"
+  },
+  {
+    "_id": "87539218",
+    "name": "Orthotrichum consobrinum",
+    "state": "CR"
+  },
+  {
+    "_id": "87539264",
+    "name": "Orthotrichum hispanicum",
+    "state": "NT"
+  },
+  {
+    "_id": "87539853",
+    "name": "Orthotrichum vittii",
+    "state": "NT"
+  },
+  {
+    "_id": "87540862",
+    "name": "Codonoblepharon forsteri",
+    "state": "EN"
+  },
+  {
+    "_id": "84534602",
+    "name": "Acaulon dertosense",
+    "state": "EN"
+  },
+  {
+    "_id": "84534623",
+    "name": "Acaulon fontiquerianum",
+    "state": "NT"
+  },
+  {
+    "_id": "84534627",
+    "name": "Acaulon mediterraneum",
+    "state": "NT"
+  },
+  {
+    "_id": "84534707",
+    "name": "Aloina bifrons",
+    "state": "NT"
+  },
+  {
+    "_id": "84712444",
+    "name": "Aschisma carniolicum",
+    "state": "EN"
+  },
+  {
+    "_id": "84712455",
+    "name": "Aschisma cuynetii",
+    "state": "EN"
+  },
+  {
+    "_id": "85839381",
+    "name": "Bryoerythrophyllum inaequalifolium",
+    "state": "VU"
+  },
+  {
+    "_id": "87560164",
+    "name": "Crossidium laevipilum",
+    "state": "NT"
+  },
+  {
+    "_id": "87561881",
+    "name": "Microbryum fosbergii",
+    "state": "NT"
+  },
+  {
+    "_id": "87561885",
+    "name": "Microbryum longipes",
+    "state": "VU"
+  },
+  {
+    "_id": "87562666",
+    "name": "Pterygoneurum sampaianum",
+    "state": "NT"
+  },
+  {
+    "_id": "87562702",
+    "name": "Scopelophila ligulata",
+    "state": "NT"
+  },
+  {
+    "_id": "87564089",
+    "name": "Tortula bolanderi",
+    "state": "EN"
+  },
+  {
+    "_id": "87564467",
+    "name": "Tortula vlassovii",
+    "state": "EN"
+  },
+  {
+    "_id": "87564551",
+    "name": "Triquetrella arapilensis",
+    "state": "NT"
+  },
+  {
+    "_id": "84374505",
+    "name": "Campylostelium strictum",
+    "state": "EN"
+  },
+  {
+    "_id": "87536360",
+    "name": "Riccia atromarginata",
+    "state": "EN"
+  },
+  {
+    "_id": "87536413",
+    "name": "Riccia ciliata",
+    "state": "DD"
+  },
+  {
+    "_id": "87536569",
+    "name": "Riccia crustata",
+    "state": "VU"
+  },
+  {
+    "_id": "87538699",
+    "name": "Riccia ligula",
+    "state": "EN"
+  },
+  {
+    "_id": "87538752",
+    "name": "Riccia sommieri",
+    "state": "NT"
+  },
+  {
+    "_id": "84516325",
+    "name": "Riella bialata",
+    "state": "DD"
+  },
+  {
+    "_id": "84516489",
+    "name": "Riella cossoniana",
+    "state": "NT"
+  },
+  {
+    "_id": "84516558",
+    "name": "Riella helicophylla",
+    "state": "NT"
+  },
+  {
+    "_id": "84516656",
+    "name": "Riella notarisii",
+    "state": "NT"
+  },
+  {
+    "_id": "87486753",
+    "name": "Tetralophozia filiformis",
+    "state": "CR"
+  },
+  {
+    "_id": "87569374",
+    "name": "Sphagnum pylaesii",
+    "state": "EN"
+  },
+  {
+    "_id": "87469589",
+    "name": "Pelekium atlanticum",
+    "state": "EN"
+  },
+  {
+    "_id": "83659788",
+    "name": "Andreaea crassinervia",
+    "state": "EN"
+  },
+  {
+    "_id": "83659796",
+    "name": "Andreaea frigida",
+    "state": "VU"
+  },
+  {
+    "_id": "87538831",
+    "name": "Aneura maxima",
+    "state": "DD"
+  },
+  {
+    "_id": "83658361",
+    "name": "Anthoceros agrestis",
+    "state": "NT"
+  },
+  {
+    "_id": "87492751",
+    "name": "Cephaloziella grimsulana",
+    "state": "DD"
+  },
+  {
+    "_id": "87492865",
+    "name": "Cephaloziella phyllacantha",
+    "state": "CR"
+  },
+  {
+    "_id": "84372144",
+    "name": "Cleistocarpidium palustre",
+    "state": "VU"
+  },
+  {
+    "_id": "84374410",
+    "name": "Coscinodon humilis",
+    "state": "DD"
+  },
+  {
+    "_id": "85845927",
+    "name": "Schistidium flaccidum",
+    "state": "VU"
+  },
+  {
+    "_id": "87539052",
+    "name": "Phaeoceros carolinianus",
+    "state": "NT"
+  },
+  {
+    "_id": "87541043",
+    "name": "Pallavicinia lyellii",
+    "state": "VU"
+  },
+  {
+    "_id": "87543575",
+    "name": "Porella arboris-vitae",
+    "state": "NT"
+  },
+  {
+    "_id": "84534637",
+    "name": "Acaulon muticum",
+    "state": "NT"
+  },
+  {
+    "_id": "84720307",
+    "name": "Hydrogonium bolleanum",
+    "state": "DD"
+  },
+  {
+    "_id": "87562956",
+    "name": "Syntrichia subpapillosissima",
+    "state": "DD"
+  },
+  {
+    "_id": "87536601",
+    "name": "Riccia duplex",
+    "state": "DD"
+  },
+  {
+    "_id": "87530955",
+    "name": "Trichocolea tomentella",
+    "state": "NT"
+  },
+  {
+    "_id": "84740919",
+    "name": "Dicranum muehlenbeckii",
+    "state": "VU"
+  },
+  {
+    "_id": "87495500",
+    "name": "Geocalyx graveolens",
+    "state": "NT"
+  },
+  {
+    "_id": "87578580",
+    "name": "Heterogemma capitata",
+    "state": "VU"
+  },
+  {
+    "_id": "87564194",
+    "name": "Tortula mucronifolia",
+    "state": "NT"
+  },
+  {
+    "_id": "87522879",
+    "name": "Scapania apiculata",
+    "state": "NT"
+  },
+  {
+    "_id": "87569778",
+    "name": "Splachnum ampullaceum",
+    "state": "NT"
+  },
+  {
+    "_id": "83659862",
+    "name": "Anacolia menziesii",
+    "state": "VU"
+  },
+  {
+    "_id": "86499162",
+    "name": "Entodon cladorrhizans",
+    "state": "DD"
+  },
+  {
+    "_id": "86499493",
+    "name": "Fabronia ciliaris",
+    "state": "VU"
+  },
+  {
+    "_id": "67369282",
+    "name": "Fissidens curvatus",
+    "state": "DD"
+  },
+  {
+    "_id": "84768303",
+    "name": "Fissidens ovatifolius",
+    "state": "DD"
+  },
+  {
+    "_id": "84768397",
+    "name": "Fissidens sublimbatus",
+    "state": "DD"
+  },
+  {
+    "_id": "84374266",
+    "name": "Pyramidula tetragona",
+    "state": "EN"
+  },
+  {
+    "_id": "85842359",
+    "name": "Grimmia capillata",
+    "state": "VU"
+  },
+  {
+    "_id": "84374792",
+    "name": "Braunia imberbis",
+    "state": "NT"
+  },
+  {
+    "_id": "84829806",
+    "name": "Campylopus oerstedianus",
+    "state": "DD"
+  },
+  {
+    "_id": "84829834",
+    "name": "Campylopus subulatus",
+    "state": "DD"
+  },
+  {
+    "_id": "87560160",
+    "name": "Crossidium geheebii",
+    "state": "NT"
+  },
+  {
+    "_id": "87560757",
+    "name": "Gyroweisia reflexa",
+    "state": "NT"
+  },
+  {
+    "_id": "87561597",
+    "name": "Hyophila involuta",
+    "state": "VU"
+  },
+  {
+    "_id": "87562817",
+    "name": "Syntrichia handelii",
+    "state": "DD"
+  },
+  {
+    "_id": "87562838",
+    "name": "Syntrichia minor",
+    "state": "DD"
+  },
+  {
+    "_id": "87563126",
+    "name": "Timmiella flexiseta",
+    "state": "DD"
+  },
+  {
+    "_id": "84374457",
+    "name": "Campylostelium pitardii",
+    "state": "EN"
+  },
+  {
+    "_id": "84374531",
+    "name": "Ptychomitrium incurvum",
+    "state": "CR"
+  },
+  {
+    "_id": "84516595",
+    "name": "Riella mediterranea",
+    "state": "DD"
+  },
+  {
+    "_id": "87570732",
+    "name": "Tayloria froelichiana",
+    "state": "NT"
+  },
+  {
+    "_id": "110805790",
+    "name": "Allium scaberrimum",
+    "state": "VU"
+  },
+  {
+    "_id": "84712048",
+    "name": "Claopodium rostratum",
+    "state": "VU"
+  },
+  {
+    "_id": "83659958",
+    "name": "Philonotis calcarea",
+    "state": "NT"
+  },
+  {
+    "_id": "83660106",
+    "name": "Philonotis rigida",
+    "state": "VU"
+  },
+  {
+    "_id": "83662250",
+    "name": "Bryum cellulare",
+    "state": "EN"
+  },
+  {
+    "_id": "85842907",
+    "name": "Grimmia mollis",
+    "state": "VU"
+  },
+  {
+    "_id": "85843225",
+    "name": "Grimmia nutans",
+    "state": "EN"
+  },
+  {
+    "_id": "85843472",
+    "name": "Grimmia ungeri",
+    "state": "EN"
+  },
+  {
+    "_id": "87532943",
+    "name": "Marchantia paleacea",
+    "state": "VU"
+  },
+  {
+    "_id": "87541903",
+    "name": "Polytrichastrum sexangulare",
+    "state": "NT"
+  },
+  {
+    "_id": "87543581",
+    "name": "Porella baueri",
+    "state": "DD"
+  },
+  {
+    "_id": "87560179",
+    "name": "Crossidium laxefilamentosum",
+    "state": "EN"
+  },
+  {
+    "_id": "176977",
+    "name": "Riccia warnstorfii",
+    "state": "VU"
+  },
+  {
+    "_id": "87530575",
+    "name": "Solenostoma handelii",
+    "state": "CR"
+  },
+  {
+    "_id": "84375825",
+    "name": "Campyliadelphus elodes",
+    "state": "NT"
+  },
+  {
+    "_id": "84376261",
+    "name": "Conardia compacta",
+    "state": "NT"
+  },
+  {
+    "_id": "83660098",
+    "name": "Philonotis marchica",
+    "state": "EN"
+  },
+  {
+    "_id": "83662317",
+    "name": "Bryum funkii",
+    "state": "VU"
+  },
+  {
+    "_id": "83662375",
+    "name": "Bryum intermedium",
+    "state": "DD"
+  },
+  {
+    "_id": "83663258",
+    "name": "Bryum turbinatum",
+    "state": "VU"
+  },
+  {
+    "_id": "84254812",
+    "name": "Ptychostomum cernuum",
+    "state": "EN"
+  },
+  {
+    "_id": "86484012",
+    "name": "Hamatocaulis vernicosus",
+    "state": "VU"
+  },
+  {
+    "_id": "84372118",
+    "name": "Paraleucobryum sauteri",
+    "state": "NT"
+  },
+  {
+    "_id": "84342750",
+    "name": "Ceratodon conicus",
+    "state": "NT"
+  },
+  {
+    "_id": "85840231",
+    "name": "Encalypta affinis",
+    "state": "DD"
+  },
+  {
+    "_id": "85841349",
+    "name": "Encalypta spathulata",
+    "state": "VU"
+  },
+  {
+    "_id": "87580415",
+    "name": "Ephemerum cohaerens",
+    "state": "VU"
+  },
+  {
+    "_id": "87580464",
+    "name": "Ephemerum crassinervium",
+    "state": "NT"
+  },
+  {
+    "_id": "87580552",
+    "name": "Ephemerum recurvifolium",
+    "state": "NT"
+  },
+  {
+    "_id": "87580620",
+    "name": "Ephemerum spinulosum",
+    "state": "DD"
+  },
+  {
+    "_id": "87575330",
+    "name": "Micromitrium tenerum",
+    "state": "EN"
+  },
+  {
+    "_id": "84768359",
+    "name": "Fissidens rivularis",
+    "state": "NT"
+  },
+  {
+    "_id": "85841525",
+    "name": "Entosthodon muhlenbergii",
+    "state": "NT"
+  },
+  {
+    "_id": "86186380",
+    "name": "Physcomitrium sphaericum",
+    "state": "VU"
+  },
+  {
+    "_id": "85842023",
+    "name": "Grimmia arenaria",
+    "state": "DD"
+  },
+  {
+    "_id": "85842468",
+    "name": "Grimmia crinita",
+    "state": "VU"
+  },
+  {
+    "_id": "87462973",
+    "name": "Hypnum imponens",
+    "state": "NT"
+  },
+  {
+    "_id": "87569764",
+    "name": "Meesia triquetra",
+    "state": "NT"
+  },
+  {
+    "_id": "84315851",
+    "name": "Mielichhoferia elongata",
+    "state": "VU"
+  },
+  {
+    "_id": "84316108",
+    "name": "Mielichhoferia mielichhoferiana",
+    "state": "NT"
+  },
+  {
+    "_id": "87539614",
+    "name": "Lewinskya laevigata",
+    "state": "VU"
+  },
+  {
+    "_id": "87539753",
+    "name": "Orthotrichum stellatum",
+    "state": "VU"
+  },
+  {
+    "_id": "87539847",
+    "name": "Orthotrichum urnigerum",
+    "state": "VU"
+  },
+  {
+    "_id": "84712837",
+    "name": "Atrichum angustatum",
+    "state": "VU"
+  },
+  {
+    "_id": "87561639",
+    "name": "Leptodontium flexifolium",
+    "state": "NT"
+  },
+  {
+    "_id": "87562368",
+    "name": "Pottiopsis caespitosa",
+    "state": "VU"
+  },
+  {
+    "_id": "87562436",
+    "name": "Pseudocrossidium obtusulum",
+    "state": "DD"
+  },
+  {
+    "_id": "87562698",
+    "name": "Scopelophila cataractae",
+    "state": "EN"
+  },
+  {
+    "_id": "84374494",
+    "name": "Campylostelium saxicola",
+    "state": "VU"
+  },
+  {
+    "_id": "84373680",
+    "name": "Hymenoloma mulahaceni",
+    "state": "DD"
+  },
+  {
+    "_id": "85850641",
+    "name": "Seligeria trifaria",
+    "state": "DD"
+  },
+  {
+    "_id": "87829625",
+    "name": "Asparagus macrorrhizus",
+    "state": "CR"
+  },
+  {
+    "_id": "86200167",
+    "name": "Platyhypnum cochlearifolium",
+    "state": "EN"
+  },
+  {
+    "_id": "86200201",
+    "name": "Platyhypnum molle",
+    "state": "VU"
+  },
+  {
+    "_id": "86200234",
+    "name": "Hygrohypnum styriacum",
+    "state": "EN"
+  },
+  {
+    "_id": "83659776",
+    "name": "Andreaea alpestris",
+    "state": "DD"
+  },
+  {
+    "_id": "83659401",
+    "name": "Andreaea nivalis",
+    "state": "NT"
+  },
+  {
+    "_id": "86483667",
+    "name": "Tomentypnum nitens",
+    "state": "NT"
+  },
+  {
+    "_id": "87492340",
+    "name": "Odontoschisma francisci",
+    "state": "NT"
+  },
+  {
+    "_id": "87492675",
+    "name": "Cephaloziella elachista",
+    "state": "VU"
+  },
+  {
+    "_id": "87492702",
+    "name": "Cephaloziella elegans",
+    "state": "DD"
+  },
+  {
+    "_id": "87492810",
+    "name": "Cephaloziella integerrima",
+    "state": "EN"
+  },
+  {
+    "_id": "87492834",
+    "name": "Cephaloziella massalongi",
+    "state": "EN"
+  },
+  {
+    "_id": "87492891",
+    "name": "Cephaloziella spinigera",
+    "state": "NT"
+  },
+  {
+    "_id": "87542504",
+    "name": "Frullania oakesiana",
+    "state": "EN"
+  },
+  {
+    "_id": "87495677",
+    "name": "Gymnomitrion alpinum",
+    "state": "VU"
+  },
+  {
+    "_id": "87496859",
+    "name": "Marsupella sparsifolia",
+    "state": "NT"
+  },
+  {
+    "_id": "87560282",
+    "name": "Didymodon asperifolius",
+    "state": "NT"
+  },
+  {
+    "_id": "87560335",
+    "name": "Didymodon brachyphyllus",
+    "state": "EN"
+  },
+  {
+    "_id": "87562757",
+    "name": "Stegonia latifolia",
+    "state": "NT"
+  },
+  {
+    "_id": "87566879",
+    "name": "Weissia squarrosa",
+    "state": "VU"
+  },
+  {
+    "_id": "87576092",
+    "name": "Scorpidium scorpioides",
+    "state": "NT"
+  },
+  {
+    "_id": "87570876",
+    "name": "Tayloria tenuis",
+    "state": "VU"
+  },
+  {
+    "_id": "164218",
+    "name": "Dactylorhiza elata",
+    "state": "NT"
+  },
+  {
+    "_id": "88150678",
+    "name": "Cololejeunea sintenisii",
+    "state": "EN"
+  },
+  {
+    "_id": "88281646",
+    "name": "Physcomitridium readeri",
+    "state": "VU"
+  },
+  {
+    "_id": "88289145",
+    "name": "Scapania parvifolia",
+    "state": "NT"
+  },
+  {
+    "_id": "88695153",
+    "name": "Fossombronia mittenii",
+    "state": "DD"
+  },
+  {
+    "_id": "89796054",
+    "name": "Gagea polymorpha",
+    "state": "NT"
+  },
+  {
+    "_id": "89826661",
+    "name": "Gagea extremadurensis",
+    "state": "DD"
+  },
+  {
+    "_id": "30318",
+    "name": "Tetraclinis articulata",
+    "state": "EN"
+  },
+  {
+    "_id": "96426740",
+    "name": "Coronilla talaverae",
+    "state": "EN"
+  },
+  {
+    "_id": "96437005",
+    "name": "Lavatera oblongifolia",
+    "state": "EN"
+  },
+  {
+    "_id": "96438921",
+    "name": "Thymelaea velutina",
+    "state": "VU"
+  },
+  {
+    "_id": "99556169",
+    "name": "Sideroxylon canariense",
+    "state": "EN"
+  },
+  {
+    "_id": "37665",
+    "name": "Pleiomeris canariensis",
+    "state": "CR"
+  },
+  {
+    "_id": "30327",
+    "name": "Juniperus cedrus",
+    "state": "EN"
+  },
+  {
+    "_id": "38393",
+    "name": "Salix canariensis",
+    "state": "NT"
+  },
+  {
+    "_id": "161857",
+    "name": "Cistus chinamadensis",
+    "state": "EN"
+  },
+  {
+    "_id": "63005",
+    "name": "Olea europaea",
+    "state": "DD"
+  },
+  {
+    "_id": "102620898",
+    "name": "Crataegus laciniata",
+    "state": "NT"
+  },
+  {
+    "_id": "102819769",
+    "name": "Erica andevalensis",
+    "state": "NT"
+  },
+  {
+    "_id": "195499",
+    "name": "Carthamus balearicus",
+    "state": "NT"
+  },
+  {
+    "_id": "30394",
+    "name": "Dracaena draco",
+    "state": "EN"
+  },
+  {
+    "_id": "61655",
+    "name": "Echium acanthocarpum",
+    "state": "CR"
+  },
+  {
+    "_id": "30334",
+    "name": "Rhamnus integrifolia",
+    "state": "NT"
+  },
+  {
+    "_id": "103496011",
+    "name": "Thymus albicans",
+    "state": "VU"
+  },
+  {
+    "_id": "162224",
+    "name": "Genista dorycnifolia",
+    "state": "VU"
+  },
+  {
+    "_id": "103534115",
+    "name": "Adenocarpus gibbsianus",
+    "state": "VU"
+  },
+  {
+    "_id": "103535108",
+    "name": "Echinospartum algibicum",
+    "state": "CR"
+  },
+  {
+    "_id": "161922",
+    "name": "Daphne rodriguezii",
+    "state": "EN"
+  },
+  {
+    "_id": "103587155",
+    "name": "Cneorum tricoccon",
+    "state": "VU"
+  },
+  {
+    "_id": "104185163",
+    "name": "Plantago arborescens",
+    "state": "DD"
+  },
+  {
+    "_id": "104190621",
+    "name": "Bencomia caudata",
+    "state": "NT"
+  },
+  {
+    "_id": "104191153",
+    "name": "Marcetella moquiniana",
+    "state": "EN"
+  },
+  {
+    "_id": "109636512",
+    "name": "Riella echinata",
+    "state": "EN"
+  },
+  {
+    "_id": "31361",
+    "name": "Morella rivas-martinezii",
+    "state": "CR"
+  },
+  {
+    "_id": "110626455",
+    "name": "Dendriopoterium menendezii",
+    "state": "EN"
+  },
+  {
+    "_id": "175237",
+    "name": "Narcissus jonquilla",
+    "state": "DD"
+  },
+  {
+    "_id": "165129",
+    "name": "Genista benehoavensis",
+    "state": "VU"
+  },
+  {
+    "_id": "79913758",
+    "name": "Lonicera arborea",
+    "state": "NT"
+  },
+  {
+    "_id": "161926",
+    "name": "Lepidium navasii",
+    "state": "EN"
+  },
+  {
+    "_id": "175300",
+    "name": "Rorippa valdes-bermejoi",
+    "state": "CR"
+  },
+  {
+    "_id": "95314941",
+    "name": "Avellara fistulosa",
+    "state": "CR"
+  },
+  {
+    "_id": "120988851",
+    "name": "Armeria gaditana",
+    "state": "VU"
+  },
+  {
+    "_id": "120989678",
+    "name": "Euphorbia uliginosa",
+    "state": "NT"
+  },
+  {
+    "_id": "114011333",
+    "name": "Carex lucennoiberica",
+    "state": "VU"
+  },
+  {
+    "_id": "173015",
+    "name": "Pyrus spinosa",
+    "state": "DD"
+  },
+  {
+    "_id": "151861",
+    "name": "Nopalea dejecta",
+    "state": "DD"
+  },
+  {
+    "_id": "202914",
+    "name": "Aesculus hippocastanum",
+    "state": "VU"
+  },
+  {
+    "_id": "123448322",
+    "name": "Rhynchostegiella pseudolitorea",
+    "state": "NT"
+  },
+  {
+    "_id": "13164470",
+    "name": "Agrostis juressii",
+    "state": "VU"
+  },
+  {
+    "_id": "61656",
+    "name": "Echium callithyrsum",
+    "state": "VU"
+  },
+  {
+    "_id": "162087",
+    "name": "Helianthemum bystropogophyllum",
+    "state": "CR"
+  },
+  {
+    "_id": "125724012",
+    "name": "Taraxacum litophyllum",
+    "state": "DD"
+  },
+  {
+    "_id": "167933",
+    "name": "Eryngium galioides",
+    "state": "EN"
+  },
+  {
+    "_id": "131796552",
+    "name": "Frullania calcarifera",
+    "state": "NT"
+  },
+  {
+    "_id": "132255613",
+    "name": "Lewinskya lamyana",
+    "state": "CR"
+  },
+  {
+    "_id": "30317",
+    "name": "Salix tarraconensis",
+    "state": "VU"
+  },
+  {
+    "_id": "172161",
+    "name": "Allium chamaemoly",
+    "state": "DD"
+  },
+  {
+    "_id": "136106211",
+    "name": "Prospero pulchellum",
+    "state": "DD"
+  },
+  {
+    "_id": "195410",
+    "name": "Narcissus cavanillesii",
+    "state": "DD"
+  },
+  {
+    "_id": "87543071",
+    "name": "Frullania riparia",
+    "state": "EN"
+  },
+  {
+    "_id": "87531594",
+    "name": "Mannia fragrans",
+    "state": "VU"
+  },
+  {
+    "_id": "87525969",
+    "name": "Scapania verrucosa",
+    "state": "VU"
+  },
+  {
+    "_id": "87562952",
+    "name": "Syntrichia sinensis",
+    "state": "VU"
+  },
+  {
+    "_id": "159480422",
+    "name": "Alnus lusitanica",
+    "state": "DD"
+  },
+  {
+    "_id": "162150030",
+    "name": "Linaria vettonica",
+    "state": "CR"
+  },
+  {
+    "_id": "163368605",
+    "name": "Centaurea avilae",
+    "state": "EN"
+  },
+  {
+    "_id": "163369173",
+    "name": "Centaurea janeri",
+    "state": "EN"
+  },
+  {
+    "_id": "163379779",
+    "name": "Succisella carvalhoana",
+    "state": "EN"
+  },
+  {
+    "_id": "163380572",
+    "name": "Astragalus devesae",
+    "state": "CR"
+  },
+  {
+    "_id": "163380835",
+    "name": "Antirrhinum grosii",
+    "state": "EN"
+  },
+  {
+    "_id": "163381569",
+    "name": "Pseudomisopates rivas-martinezii",
+    "state": "CR"
+  },
+  {
+    "_id": "87532557",
+    "name": "Dumortiera hirsuta",
+    "state": "NT"
+  },
+  {
+    "_id": "172635583",
+    "name": "Astragalus gines-lopezii",
+    "state": "EN"
+  },
+  {
+    "_id": "163348562",
+    "name": "Carex lainzii",
+    "state": "EN"
+  },
+  {
+    "_id": "79727759",
+    "name": "Gesnouinia arborea",
+    "state": "EN"
+  },
+  {
+    "_id": "68187345",
+    "name": "Narcissus willkommii",
+    "state": "EN"
+  },
+  {
+    "_id": "184927540",
+    "name": "Senecio massaicus",
+    "state": "NT"
+  },
+  {
+    "_id": "200534846",
+    "name": "Hypericum callithyrsum",
+    "state": "NT"
+  },
+  {
+    "_id": "162444",
+    "name": "Aquilegia cazorlensis",
+    "state": "EN"
+  },
+  {
+    "_id": "214384319",
+    "name": "Centaurea gallaecica",
+    "state": "EN"
+  },
+  {
+    "_id": "163377589",
+    "name": "Silene marizii",
+    "state": "NT"
+  },
+  {
+    "_id": "193560",
+    "name": "Euphorbia bourgeana",
+    "state": "VU"
+  },
+  {
+    "_id": "246535175",
+    "name": "Carex camposii",
+    "state": "EN"
+  },
+  {
+    "_id": "13164397",
+    "name": "Carex furva",
+    "state": "CR"
+  },
+  {
+    "_id": "13164423",
+    "name": "Juncus emmanuelis",
+    "state": "EN"
+  },
+  {
+    "_id": "61600",
+    "name": "Narcissus alcaracensis",
+    "state": "EN"
+  },
+  {
+    "_id": "46880371",
+    "name": "Narcissus munozii-garmendiae",
+    "state": "NT"
+  },
+  {
+    "_id": "61605",
+    "name": "Narcissus radinganorum",
+    "state": "EN"
+  },
+  {
+    "_id": "162096",
+    "name": "Thorella verticillato-inundata",
+    "state": "VU"
+  },
+  {
+    "_id": "61601",
+    "name": "Narcissus bujei",
+    "state": "EN"
+  },
+  {
+    "_id": "19365844",
+    "name": "Pistacia atlantica",
+    "state": "NT"
+  }
+]
