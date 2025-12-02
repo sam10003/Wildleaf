@@ -22,7 +22,7 @@ function Map(props) {
         setLoading(true);    // loading state
         setError(false);     // error catching
 
-        fetch('/Wildleaf/spain_regions.geojson')
+        fetch('/spain_regions.geojson')
             .then(res => {
                 if (!res.ok) {
                     throw new Error(`.map: HTTP error -- status: ${res.status}`);
