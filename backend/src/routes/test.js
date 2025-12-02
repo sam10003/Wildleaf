@@ -4,6 +4,42 @@ import Canon from '../models/Canon_list.js';
 
 const router = express.Router();
 
+// Helper function for rate-limited GBIF API calls with retry logic
+async function fetchWithRetry(url, maxRetries = 3, baseDelay = 1000) {
+  for (let attempt = 0; attempt < maxRetries; attempt++) {
+    try {
+      const response = await fetch(url);
+      
+      // Handle 429 (Too Many Requests) with exponential backoff
+      if (response.status === 429) {
+        const retryAfter = response.headers.get('Retry-After');
+        const delay = retryAfter ? parseInt(retryAfter) * 1000 : baseDelay * Math.pow(2, attempt);
+        console.warn(`Rate limited (429). Waiting ${delay}ms before retry ${attempt + 1}/${maxRetries}`);
+        await new Promise(resolve => setTimeout(resolve, delay));
+        continue;
+      }
+      
+      // Handle other errors
+      if (!response.ok && response.status !== 404) {
+        if (attempt === maxRetries - 1) {
+          throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+        }
+        const delay = baseDelay * Math.pow(2, attempt);
+        await new Promise(resolve => setTimeout(resolve, delay));
+        continue;
+      }
+      
+      return response;
+    } catch (err) {
+      if (attempt === maxRetries - 1) {
+        throw err;
+      }
+      const delay = baseDelay * Math.pow(2, attempt);
+      await new Promise(resolve => setTimeout(resolve, delay));
+    }
+  }
+}
+
 // Map GeoJSON region names to GBIF stateProvince names
 function getGBIFRegionName(geojsonName) {
   const mapping = {
@@ -57,15 +93,15 @@ router.get('/plants/:region', async (req, res) => {
     }
 
     const plantsInRegion = [];
-    const batchSize = 20; // Process 20 plants in parallel for faster results
+    const batchSize = 5; // Reduced batch size to avoid rate limiting
     let checkedCount = 0;
 
     // Process ALL plants - don't stop early!
     for (let i = 0; i < allIUCNPlants.length; i += batchSize) {
       const batch = allIUCNPlants.slice(i, i + batchSize);
       
-      // Check each plant in parallel
-      await Promise.all(batch.map(async (plant) => {
+      // Process batch sequentially to avoid rate limiting
+      for (const plant of batch) {
         checkedCount++;
         try {
           // Query GBIF: Does this plant have occurrences in this region?
@@ -78,10 +114,10 @@ router.get('/plants/:region', async (req, res) => {
             `&hasCoordinate=true` +
             `&limit=10`; // Get more results to better check occurrence count
 
-          let response = await fetch(apiUrl);
+          let response = await fetchWithRetry(apiUrl, 3, 2000);
           let data = null;
           
-          if (response.ok) {
+          if (response && response.ok) {
             data = await response.json();
           }
 
@@ -95,9 +131,11 @@ router.get('/plants/:region', async (req, res) => {
               `&hasCoordinate=true` +
               `&limit=300`; // Get more occurrences to check region manually
             
-            response = await fetch(apiUrl);
+            // Add delay before second request
+            await new Promise(resolve => setTimeout(resolve, 1000));
+            response = await fetchWithRetry(apiUrl, 3, 2000);
             
-            if (response.ok) {
+            if (response && response.ok) {
               data = await response.json();
               
               // If plant exists in Spain, try to find it in our region
@@ -129,8 +167,12 @@ router.get('/plants/:region', async (req, res) => {
             }
           }
           
-          if (!response || !response.ok) {
-            console.warn(`GBIF API error for ${plant.name}: ${response?.status}`);
+          if (!response || (!response.ok && response.status !== 404)) {
+            if (response?.status === 429) {
+              console.warn(`Rate limited (429) for ${plant.name}, skipping for now`);
+            } else {
+              console.warn(`GBIF API error for ${plant.name}: ${response?.status}`);
+            }
             return;
           }
 
@@ -185,18 +227,20 @@ router.get('/plants/:region', async (req, res) => {
         } catch (err) {
           console.error(`Error checking ${plant.name} in ${gbifRegionName}:`, err);
         }
-      }));
-
-      // Progress update - send to client
-      if ((i + batchSize) % 50 === 0 || i + batchSize >= allIUCNPlants.length) {
-        const progress = Math.min(i + batchSize, allIUCNPlants.length);
-        console.log(`Progress: Checked ${progress}/${allIUCNPlants.length} plants, found ${plantsInRegion.length} so far`);
-        res.write(`data: ${JSON.stringify({ type: 'progress', checked: progress, total: allIUCNPlants.length, found: plantsInRegion.length })}\n\n`);
+        
+        // Add delay between each plant request to respect rate limits
+        await new Promise(resolve => setTimeout(resolve, 800));
       }
 
-      // Small delay between batches to be nice to GBIF API
+      // Progress update - send to client
+      if (checkedCount % 50 === 0 || checkedCount >= allIUCNPlants.length) {
+        console.log(`Progress: Checked ${checkedCount}/${allIUCNPlants.length} plants, found ${plantsInRegion.length} so far`);
+        res.write(`data: ${JSON.stringify({ type: 'progress', checked: checkedCount, total: allIUCNPlants.length, found: plantsInRegion.length })}\n\n`);
+      }
+
+      // Increased delay between batches to respect rate limits
       if (i + batchSize < allIUCNPlants.length) {
-        await new Promise(resolve => setTimeout(resolve, 50));
+        await new Promise(resolve => setTimeout(resolve, 2000)); // 2 second delay between batches
       }
     }
 
@@ -231,6 +275,90 @@ router.get('/all', async (req, res) => {
   } catch (err) {
     console.error(err);
     res.status(500).json({ message: 'Server failed' });
+  }
+});
+
+// Get occurrence coordinates for heatmap - all IUCN plants in Spain
+router.get('/heatmap/occurrences', async (req, res) => {
+  try {
+    console.log('Fetching heatmap occurrence data...');
+    
+    // Get all IUCN plants
+    const allIUCNPlants = await Canon.find().select('name -_id');
+    console.log(`📋 Found ${allIUCNPlants.length} IUCN plants for heatmap`);
+    
+    const heatmapPoints = [];
+    const batchSize = 3; // Much smaller batch size to avoid rate limiting
+    let processedCount = 0;
+    
+    // Process plants in batches
+    for (let i = 0; i < allIUCNPlants.length; i += batchSize) {
+      const batch = allIUCNPlants.slice(i, i + batchSize);
+      
+      // Process sequentially within batch to avoid rate limiting
+      for (const plant of batch) {
+        try {
+          // Fetch occurrences for this plant in Spain with coordinates
+          const apiUrl = `https://api.gbif.org/v1/occurrence/search?` +
+            `scientificName=${encodeURIComponent(plant.name)}` +
+            `&country=ES` +
+            `&kingdom=Plantae` +
+            `&hasCoordinate=true` +
+            `&limit=100`; // Limit to 100 occurrences per plant for performance
+          
+          const response = await fetchWithRetry(apiUrl, 3, 2000);
+          
+          if (response && response.ok) {
+            const data = await response.json();
+            
+            if (data.results && data.results.length > 0) {
+              // Extract coordinates with intensity (we can weight by occurrence count later)
+              data.results.forEach(occurrence => {
+                if (occurrence.decimalLatitude && occurrence.decimalLongitude) {
+                  // Filter out invalid coordinates
+                  const lat = parseFloat(occurrence.decimalLatitude);
+                  const lng = parseFloat(occurrence.decimalLongitude);
+                  
+                  if (lat >= -90 && lat <= 90 && lng >= -180 && lng <= 180) {
+                    heatmapPoints.push([lat, lng, 1]); // [lat, lng, intensity]
+                  }
+                }
+              });
+            }
+          }
+          
+          processedCount++;
+          
+          // Delay between requests to avoid rate limiting
+          await new Promise(resolve => setTimeout(resolve, 1000));
+        } catch (err) {
+          if (err.message && err.message.includes('429')) {
+            console.warn(`Rate limited (429) for ${plant.name}, will retry`);
+          } else {
+            console.warn(`Error fetching occurrences for ${plant.name}:`, err.message);
+          }
+        }
+      }
+      
+      // Progress update every 50 plants
+      if (processedCount % 50 === 0) {
+        console.log(`Processed ${processedCount}/${allIUCNPlants.length} plants, found ${heatmapPoints.length} points`);
+      }
+      
+      // Increased delay between batches to respect rate limits
+      await new Promise(resolve => setTimeout(resolve, 3000)); // 3 second delay between batches
+    }
+    
+    console.log(`✅ Heatmap data ready: ${heatmapPoints.length} occurrence points from ${processedCount} plants`);
+    
+    res.json({
+      points: heatmapPoints,
+      totalPlants: processedCount,
+      totalPoints: heatmapPoints.length
+    });
+  } catch (err) {
+    console.error('Error fetching heatmap occurrences:', err);
+    res.status(500).json({ message: 'Failed to fetch heatmap data', error: err.message });
   }
 });
 

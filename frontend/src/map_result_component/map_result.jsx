@@ -1,7 +1,7 @@
 import './map_result.css'
 import Plant_Details from '../plant_details_component/plant_details.jsx'
 import cancel_icon from '../assets/x.svg'
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useMemo, useCallback, useRef } from 'react'
 import { fetchPlantsByRegionProgressive } from '../services/plantService.js'
 
 function Map_Result(props) {
@@ -10,6 +10,7 @@ function Map_Result(props) {
     const [loading, setLoading] = useState(true);
     const [searchQuery, setSearchQuery] = useState('');
     const [progress, setProgress] = useState({ checked: 0, total: 0 });
+    const sortTimeoutRef = useRef(null);
 
     useEffect(() => {
         // Trigger animation when component mounts
@@ -41,9 +42,28 @@ function Map_Result(props) {
                     if (prevPlants.length === 0) {
                         setLoading(false);
                     }
-                    // Add new plant and sort by occurrence count
+                    // Add new plant (don't sort immediately - batch sorting)
                     const updated = [...prevPlants, plant];
-                    return updated.sort((a, b) => (b.occurrenceCount || 0) - (a.occurrenceCount || 0));
+                    
+                    // Debounce sorting for better performance - only sort every 500ms or after 5 new items
+                    if (sortTimeoutRef.current) {
+                        clearTimeout(sortTimeoutRef.current);
+                    }
+                    
+                    // For small lists, sort immediately; for larger lists, batch sort
+                    if (updated.length < 10) {
+                        return updated.sort((a, b) => (b.occurrenceCount || 0) - (a.occurrenceCount || 0));
+                    }
+                    
+                    // Batch sorting for larger lists
+                    sortTimeoutRef.current = setTimeout(() => {
+                        setPlants(current => {
+                            const sorted = [...current].sort((a, b) => (b.occurrenceCount || 0) - (a.occurrenceCount || 0));
+                            return sorted;
+                        });
+                    }, 300);
+                    
+                    return updated;
                 });
             },
             // onProgress - called for progress updates
@@ -61,7 +81,12 @@ function Map_Result(props) {
         );
 
         // Cleanup: close connection when component unmounts or region changes
-        return cleanup;
+        return () => {
+            cleanup();
+            if (sortTimeoutRef.current) {
+                clearTimeout(sortTimeoutRef.current);
+            }
+        };
     }, [props.region]);
 
     const handleClose = () => {
@@ -73,10 +98,14 @@ function Map_Result(props) {
         }, 300);
     };
 
-    // Filter plants by search query
-    const filteredPlants = plants.filter(plant => 
-        plant.scientificName.toLowerCase().includes(searchQuery.toLowerCase())
-    );
+    // Memoize filtered plants to avoid re-filtering on every render
+    const filteredPlants = useMemo(() => {
+        if (!searchQuery) return plants;
+        const query = searchQuery.toLowerCase();
+        return plants.filter(plant => 
+            plant.scientificName.toLowerCase().includes(query)
+        );
+    }, [plants, searchQuery]);
 
     return (
         <>

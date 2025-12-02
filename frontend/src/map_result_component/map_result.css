@@ -122,6 +122,11 @@
     overflow-y: auto;
     overflow-x: hidden;
     padding: 1vh 1vh 2vh 1vh;
+    /* Performance optimizations for smooth scrolling */
+    will-change: scroll-position;
+    transform: translateZ(0);
+    -webkit-overflow-scrolling: touch;
+    contain: layout style paint;
 }
 
 /* Custom scrollbar for plants container */
