@@ -32,7 +32,11 @@ function Page_User(props) {
                 </div>
                 <div id='info_content'>
                     {currentPage === "trash" && <User_Trash_Info user={props.user} accessToken={props.accessToken}/>}
-                    {currentPage === "personal" && <User_Personal_Info user={props.user}/>}
+                    {currentPage === "personal" && <User_Personal_Info user={props.user} 
+                                                                       accessToken={props.accessToken} 
+                                                                       setUser={props.setUser}
+                                                                       setAccessToken={props.setAccessToken}
+                                                                       changeCurrentPage={props.changeCurrentPage}/>}
                 </div>
             </div>
         </>

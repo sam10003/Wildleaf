@@ -2,6 +2,7 @@ import './page_map.css'
 import Map from '../map_component/map'
 import Map_Result from '../map_result_component/map_result'
 import Button from '../button_component/button';
+import Login_Popup from '../login_popup_component/login_popup';
 import Trash_Popup from '../trash_popup_component/trash_popup';
 import Settings_Popup from '../settings_popup_component/settings_popup';
 import { useState } from 'react';

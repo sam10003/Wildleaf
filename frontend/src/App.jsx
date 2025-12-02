@@ -118,6 +118,8 @@ console.log(canons);
                                                          changeCurrentPage={changeCurrentPage}/>}
       {currentPage == "user" && accessToken && <Page_User user={user} 
                                                           accessToken={accessToken}
+                                                          setUser={setUser}
+                                                          setAccessToken={setAccessToken}
                                                           changeCurrentPage={changeCurrentPage}/>}
     </>
   );

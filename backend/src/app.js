@@ -29,6 +29,7 @@ app.use(cookieParser());
 // CORS
 const front = process.env.FRONTEND_URL || 'http://localhost:5173';
 const allowedOrigins = Array.isArray(front) ? front : String(front).split(',').map(s => s.trim());
+allowedOrigins.push('http://52.203.48.52');
 
 app.use(cors({
   origin: function (origin, callback) {

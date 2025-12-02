@@ -16,6 +16,7 @@
     width: 40%;
     background-color: var(--light-green);
     position: relative;
+    border-radius: 20px;
 }
 
 #add_trash_container, #validation_container {
